@@ -1,0 +1,124 @@
+body {
+
+background-image:url(metal.jpg);
+background-repeat:repeat;
+}
+.about{
+margin:10px 0px 0px 0px;
+background-color:#D8D8D8 ;
+padding:25px;
+float:left;
+width:910px;
+height:auto;
+}
+.container {
+background-color:#165568 ;
+width : 960px;
+position:relative;
+margin :0 auto 0;
+}
+.userInfo {
+background-color:rgb(233,233,245) ;
+
+text-align:center;
+width:100%;
+height:auto;
+}
+.banner {
+
+
+margin:10px 0px 0px 0px;
+width:100%;
+height:auto ;
+float:left;
+
+}
+.menu{
+border:2px solid;
+background-color:#D8D8D8 ;
+width:100%;
+height:auto;
+float:left;
+margin:1px 1px;
+text-align:center;
+margin:10px 0px 0px 0px;
+}
+.sort{
+background-color:#D8D8D8 ;
+border:2px solid;
+text-align:center;
+width:15%;
+height:auto;
+float:right;
+margin:10px 0px 0px 0px;
+padding:5px 10px;
+
+}
+.content 
+{
+background-color:#D8D8D8 ;
+text-align:center;
+border:1px solid black;
+float:left;
+width:82%;
+height:auto;
+margin:10px 0px 0px 0px;
+
+}
+.contenta
+{
+margin:10px 0px 0px 0px;
+background-color:#D8D8D8 ;
+text-align:center;
+float:left;
+width:100%;
+height:auto;
+
+
+
+}
+.line {
+background-color:#D8D8D8 ;
+border:2px solid black;
+text-align:center;
+clear:both;
+float:left;
+width :100%;
+height : auto;
+
+margin : 5px 0 5px 0;
+
+}
+
+
+#forms label{
+
+    float: left;
+    clear: left;
+    width: 170px;
+    text-align: center;
+}
+#forms input {
+  
+  float: left;
+}
+#links {
+text-align:center;
+}
+
+
+table {
+text-align:center;
+margin-left:auto; 
+margin-right:auto;
+ }
+
+table td {
+width:180px;
+}
+a:hover {
+background-color:rgb(125,226,150);
+} 
+a {
+text-decoration : none;
+}

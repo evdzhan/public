@@ -1,0 +1,52 @@
+
+Time: 19/11/2011  0:39:38 *** Ship in trouble! "Manx01" sent mayday call.*** Estimated coordinates of "Manx01" are 52.245694 LAT , -5.588304 LNG 
+Best H to send : Rescue_117, 55.24 miles away. Approx. arrive time  01:06 
+Best L to send : Cardigan_Lifeboat, 34.56 miles away. Approx. arrive time  01:38 
+
+Time: 19/11/2011  0:39:38 *** Ship in trouble! "Manx05" sent mayday call.*** Estimated coordinates of "Manx05" are 52.247347 LAT , -5.559927 LNG 
+Best H to send : Rescue_117, 56.29 miles away. Approx. arrive time  01:07 
+Best L to send : Cardigan_Lifeboat, 33.58 miles away. Approx. arrive time  01:36 
+
+Time: 19/11/2011  2:30:30 *** Ship in trouble! "French04" sent mayday call.*** Estimated coordinates of "French04" are -52.542000 LAT , -15.000000 LNG 
+The ship is out of our borders. As it is some other organisation's responsibility to help them we will ignore it ! 
+
+Time: 15/11/2011  10:10:0 *** Ship in trouble! "EI007" sent mayday call.*** This ship is not in our list... cannot estimate location...
+
+
+Time: 15/11/2011  10:59:17 *** Ship in trouble! "EI001" sent mayday call.*** Estimated coordinates of "EI001" are 52.033199 LAT , -6.191132 LNG 
+Best H to send : Rescue_117, 34.30 miles away. Approx. arrive time  11:16 
+Best L to send : Rosslare_Lifeboat, 14.35 miles away. Approx. arrive time  11:33 
+
+Time: 15/11/2011  10:59:18 *** Ship in trouble! "EI002" sent mayday call.*** Estimated coordinates of "EI002" are 52.031631 LAT , -6.195721 LNG 
+Best H to send : Rescue_117, 34.16 miles away. Approx. arrive time  11:16 
+Best L to send : Rosslare_Lifeboat, 14.37 miles away. Approx. arrive time  11:33 
+
+Time: 13/11/2011  13:10:0 *** Ship in trouble! "GS452" sent mayday call.*** Estimated coordinates of "GS452" are 51.766603 LAT , -4.297654 LNG 
+Best H to send : Rescue_169, 41.18 miles away. Approx. arrive time  13:32 
+Best L to send : Cardigan_Lifeboat, 24.21 miles away. Approx. arrive time  13:51 
+
+Time: 13/11/2011  15:14:23 *** Ship in trouble! "EI597" sent mayday call.*** Estimated coordinates of "EI597" are 52.100000 LAT , -5.294573 LNG 
+Best H to send : Rescue_117, 66.25 miles away. Approx. arrive time  15:47 
+Best L to send : Fishguard_ILB, 12.88 miles away. Approx. arrive time  15:44 
+
+Time: 13/11/2011  15:34:35 *** Ship in trouble! "EI600" sent mayday call.*** Estimated coordinates of "EI600" are 52.615505 LAT , -5.723718 LNG 
+Best H to send : Rescue_116, 52.23 miles away. Approx. arrive time  16:00 
+Best L to send : Courtown_ILB, 18.20 miles away. Approx. arrive time  16:17 
+
+Time: 14/11/2011  18:0:0 *** Ship in trouble! "Tanker01" sent mayday call.*** Estimated coordinates of "Tanker01" are 51.522790 LAT , -6.074095 LNG 
+The ship is out of our borders. As it is some other organisation's responsibility to help them we will ignore it ! 
+
+Time: 14/11/2011  23:0:0 *** Ship in trouble! "Tanker03" sent mayday call.*** Estimated coordinates of "Tanker03" are 52.744262 LAT , -5.337447 LNG 
+Best H to send : Rescue_122, 41.90 miles away. Approx. arrive time  23:22 
+Best L to send : Abersoch_Lifeboat, 30.83 miles away. Approx. arrive time  23:52 
+
+Time: 15/11/2011  10:10:0 *** Ship in trouble! "EI007" sent mayday call.*** This ship is not in our list... cannot estimate location...
+
+
+Time: 15/11/2011  10:59:17 *** Ship in trouble! "EI001" sent mayday call.*** Estimated coordinates of "EI001" are 52.033199 LAT , -6.191132 LNG 
+Best H to send : Rescue_117, 34.30 miles away. Approx. arrive time  11:16 
+Best L to send : Rosslare_Lifeboat, 14.35 miles away. Approx. arrive time  11:33 
+
+Time: 15/11/2011  10:59:18 *** Ship in trouble! "EI002" sent mayday call.*** Estimated coordinates of "EI002" are 52.031631 LAT , -6.195721 LNG 
+Best H to send : Rescue_117, 34.16 miles away. Approx. arrive time  11:16 
+Best L to send : Rosslare_Lifeboat, 14.37 miles away. Approx. arrive time  11:33 

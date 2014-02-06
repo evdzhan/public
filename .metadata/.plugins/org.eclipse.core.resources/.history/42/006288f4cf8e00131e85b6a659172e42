@@ -1,0 +1,17 @@
+import abstractDataTypes.BinaryTree;
+
+ 
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+   
+	 BinaryTree bt = new BinaryTree();
+	 bt.addNode(5, "five");
+	 bt.addNode(8, "eight");
+	 bt.addNode(25, "twenty-five");
+	}
+}

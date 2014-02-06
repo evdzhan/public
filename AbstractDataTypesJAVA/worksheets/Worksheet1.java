@@ -1,4 +1,4 @@
-package mustafa.evdzhan.worksheets;
+package worksheets;
 
 import java.io.*;
 

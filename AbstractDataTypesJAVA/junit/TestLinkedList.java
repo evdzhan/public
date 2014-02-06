@@ -1,8 +1,12 @@
-package mustafa.evdzhan.junit;
+package junit;
 import static org.junit.Assert.assertEquals;
-import mustafa.evdzhan.AbstractDataTypes.LinkedList;
 
 import org.junit.Before;
+
+import abstractDataTypes.LinkedList;
+
+
+
  
 public class TestLinkedList {
 

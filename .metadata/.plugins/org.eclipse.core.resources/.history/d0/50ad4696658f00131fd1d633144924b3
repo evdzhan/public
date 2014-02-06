@@ -1,0 +1,29 @@
+package abstractDataTypes;
+
+public class Person implements Comparable<Person>{
+
+	private int age;
+	private String name;
+	private int salary;
+	@Override
+	public int compareTo(Person otherPerson) {
+		boolean ageIsSame = otherPerson.age == this.age ;
+		boolean nameIsSame = otherPerson.name.equals(this.name);
+		boolean salaryIsSame = otherPerson.salary == this.salary;
+		if(ageIsSame  && nameIsSame && salaryIsSame) {
+			
+			return 0;
+			
+		} else if(ageIsSame && nameIsSame) {
+			
+			return otherPerson.salary > this.salary ? -1 : 1 ;
+			
+		} else if(ageIsSame){
+			
+		    return otherPerson.name.compareTo(this.name);
+		}
+		
+	}
+	
+
+}

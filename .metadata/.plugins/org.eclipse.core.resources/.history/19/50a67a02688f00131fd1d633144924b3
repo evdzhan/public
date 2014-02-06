@@ -1,0 +1,20 @@
+import abstractDataTypes.Person;
+
+ 
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+   
+	  Person a = new Person(27,"Gosho1",1500);
+	  Person b = new Person(26,"Gosho",1500);
+	  Person c = new Person(35,"Ivan",1350);
+	  Person d = new Person(17,"Gosho1",1500);
+	  Person e = new Person(19,"Gosho",1500);
+	  Person f = new Person(55,"Ivan",1350);
+	  System.out.println(a.compareTo(b));
+	}
+}

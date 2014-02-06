@@ -1,0 +1,14 @@
+import abstractDataTypes.BinaryTree;
+
+ 
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+   
+	  Person a = new Person();
+	}
+}

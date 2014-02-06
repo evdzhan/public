@@ -1,0 +1,30 @@
+	 public void save() {
+		 try{
+				PrintWriter outfile = new PrintWriter (new
+				OutputStreamWriter (new FileOutputStream ("save.txt")));
+				outfile.println(theFrames.size());
+				
+				for(char[][] a:theFrames) {
+					
+				
+				
+				for(int i = 0; i < a.length; i++) {
+					
+					for(int j = 0; j < a[0].length; j++) { 
+						outfile.print(a[j][i]);
+						
+						
+				
+				
+					}
+					outfile.println();
+				}
+			
+		 }
+				outfile.close();
+		 }
+		 catch (FileNotFoundException fnf){
+				System.out.println("File not found!");
+				}
+		
+	 }

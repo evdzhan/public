@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="743" maximized="true" width="683" x="683" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -11,14 +11,16 @@
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="148" y="34"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="160" y="34"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="64" y="34"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="92" y="34"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="128" y="34"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="64" y="34"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="72" y="34"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="236" y="34"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -27,21 +29,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTree.java" partName="BinaryTree.java" path="/home/evdjoint/Programming/AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java" title="BinaryTree.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4188" selectionTopPixel="2906"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/evdjoint/Programming/AbstractDataTypesJAVA/Main.java" title="Main.java" tooltip="AbstractDataTypesJAVA/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="267" selectionTopPixel="103"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -69,7 +60,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.ui.resourcePerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.ui.resourcePerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -151,7 +142,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2cbb53d3" ratio="0.5289256" ratioLeft="320" ratioRight="285" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2cbb53d3" ratio="0.6181818" ratioLeft="374" ratioRight="231" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -170,193 +161,12 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/AbstractDataTypes/BinaryTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/AbstractDataTypes/BinaryTree/BinaryTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/BinaryTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/BoundedQueue.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/BoundedStack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/DoublyLinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/DoublyNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/LinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/LinkedListItr.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/Node.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/TreeNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/junit/TestLinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/TreeNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/DoublyLinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/DoublyNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/LinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/LinkedListItr.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/Node.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/TreeNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/junit/TestLinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/Main.java"/>
-</editors>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BoundedQueue.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BoundedStack.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DoublyLinkedList.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DoublyNode.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LinkedList.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LinkedListItr.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Node.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TreeNode.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TestLinkedList.java" index="11">
-<position info="not_deleted" x="97" y="0"/>
-</item>
-<item historyLabel="TreeNode.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TreeNode.java" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="13">
-<position info="not_deleted" x="30" y="0"/>
-</item>
-<item historyLabel="BoundedQueue.java" index="14">
-<position info="not_deleted" x="0" y="26"/>
-</item>
-<item historyLabel="BoundedStack.java" index="15">
-<position info="not_deleted" x="26" y="0"/>
-</item>
-<item historyLabel="DoublyLinkedList.java" index="16">
-<position info="not_deleted" x="28" y="0"/>
-</item>
-<item historyLabel="DoublyNode.java" index="17">
-<position info="not_deleted" x="26" y="0"/>
-</item>
-<item historyLabel="LinkedList.java" index="18">
-<position info="not_deleted" x="26" y="0"/>
-</item>
-<item historyLabel="LinkedListItr.java" index="19">
-<position info="not_deleted" x="28" y="0"/>
-</item>
-<item historyLabel="Node.java" index="20">
-<position info="not_deleted" x="26" y="0"/>
-</item>
-<item historyLabel="TreeNode.java" index="21">
-<position info="not_deleted" x="26" y="0"/>
-</item>
-<item historyLabel="TestLinkedList.java" index="22">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TestLinkedList.java" index="22">
-<position info="not_deleted" x="173" y="10"/>
-</item>
-<item historyLabel="TestLinkedList.java" index="22">
-<position info="not_deleted" x="134" y="0"/>
-</item>
-<item historyLabel="LinkedListItr.java" index="19">
-<position info="not_deleted" x="28" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="4196" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="3688" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="2577" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="2827" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="3688" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="3093" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="3084" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="3428" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="3558" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="3608" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="4166" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="23">
-<position info="not_deleted" x="4188" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="40" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="178" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="204" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="453" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="265" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="453" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="315" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="453" y="0"/>
-</item>
-<item historyLabel="Main.java" index="24">
-<position info="not_deleted" x="333" y="0"/>
-</item>
-<item active="true" historyLabel="Main.java" index="24">
-<position info="not_deleted" x="453" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -370,20 +180,38 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Arrays.class" tooltip="java.util.Arrays">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=AbstractDataTypesJAVA/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(Arrays.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ComparableTimSort.class" tooltip="java.util.ComparableTimSort">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=AbstractDataTypesJAVA/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(ComparableTimSort.class"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="AbstractDataTypesJAVA/Main.java">
 <persistable path="/AbstractDataTypesJAVA/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/Person.java">
+<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/Person.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedQueue.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java">
+<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTree.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java">
 <persistable path="/AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestLinkedList.java" tooltip="AbstractDataTypesJAVA/junit/TestLinkedList.java">
-<persistable path="/AbstractDataTypesJAVA/junit/TestLinkedList.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DoublyLinkedList.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/DoublyLinkedList.java">
+<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/DoublyLinkedList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DoublyNode.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/DoublyNode.java">
+<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/DoublyNode.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/Node.java">
+<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/Node.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeNode.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/TreeNode.java">
 <persistable path="/AbstractDataTypesJAVA/abstractDataTypes/TreeNode.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/Node.java">
-<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/Node.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedStack.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java">
+<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedListItr.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/LinkedListItr.java">
 <persistable path="/AbstractDataTypesJAVA/abstractDataTypes/LinkedListItr.java"/>
@@ -391,29 +219,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedList.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/LinkedList.java">
 <persistable path="/AbstractDataTypesJAVA/abstractDataTypes/LinkedList.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DoublyNode.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/DoublyNode.java">
-<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/DoublyNode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DoublyLinkedList.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/DoublyLinkedList.java">
-<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/DoublyLinkedList.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedStack.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java">
-<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedQueue.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java">
-<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeNode.java" tooltip="AbstractDataTypesJAVA/TreeNode.java">
-<persistable path="/AbstractDataTypesJAVA/TreeNode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" tooltip="AbstractDataTypesJAVA/Node.java">
-<persistable path="/AbstractDataTypesJAVA/Node.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedListItr.java" tooltip="AbstractDataTypesJAVA/LinkedListItr.java">
-<persistable path="/AbstractDataTypesJAVA/LinkedListItr.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedList.java" tooltip="AbstractDataTypesJAVA/LinkedList.java">
-<persistable path="/AbstractDataTypesJAVA/LinkedList.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestLinkedList.java" tooltip="AbstractDataTypesJAVA/junit/TestLinkedList.java">
+<persistable path="/AbstractDataTypesJAVA/junit/TestLinkedList.java"/>
 </file>
 </mruList>
 </workbench>

@@ -2,4 +2,9 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="AbstractDataTypes.LinkedList"/>
 <fullyQualifiedTypeName name="abstractDataTypes.LinkedList"/>
+<fullyQualifiedTypeName name="abstractDataTypes.DoublyLinkedList"/>
+<fullyQualifiedTypeName name="abstractDataTypes.DoublyNode"/>
+<fullyQualifiedTypeName name="abstractDataTypes.BinaryTree"/>
+<fullyQualifiedTypeName name="abstractDataTypes.TreeNode"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

@@ -1,6 +1,12 @@
 package abstractDataTypes;
 
 
+/** 
+ *  Abstract data type representing Queue. 
+ * The queue is bounded i.e. it will run out of space eventually.
+ * @author Evdzhan Mustafa 
+ * @version 1.0
+ */
 
 public class BoundedQueue {
 

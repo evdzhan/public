@@ -1,5 +1,12 @@
 
 package abstractDataTypes;
+
+/** 
+ * @author Evdzhan Mustafa 
+ * Iterator to provide basic operations over a Singly Linked List.
+ * Doesn't support the remove operation.
+ * @version 1.0
+ */
 public class LinkedListItr implements java.util.Iterator<Object> {
   private Node currentPosition;
 	 

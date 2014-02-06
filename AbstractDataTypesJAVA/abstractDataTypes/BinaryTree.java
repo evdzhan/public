@@ -1,19 +1,31 @@
 package abstractDataTypes;
 
-
+/** 
+ * Abstract data type representing Binary Search Tree.
+ * @author Evdzhan Mustafa 
+ * @see TreeNode
+ * @version 1.0
+ */
 
 
 public class BinaryTree {
 
+	 
 	private TreeNode root;
 	
+	/** Check if the tree is empty
+	 * @return true if the linked list is empty */
 	public boolean isEmpty() {
 		return root == null;
 	}
+	
+	/** Adds node to the Tree. 
+	 * @param key the key to which the node will correspond
+	 * @param data the data to be held in the node - any object */
 	public void addNode(int key,Object data) {
 		TreeNode node = new TreeNode(key,data);
 		
-		if(root == null) {
+		if(root == null) { // the tree is empty , the new node becomes root.
 			
 			root = node;
 			
@@ -27,7 +39,7 @@ public class BinaryTree {
 				
 				parent=current;
 				
-				if(key < current.getKey()) {
+				if(key < current.getKey()) { // comparison to decide where to branch on - left or right
 					
 					current = current.getLeft();
 					
@@ -52,7 +64,11 @@ public class BinaryTree {
 				}
 			}
 		}
-	
+	/** 
+     * Traverse the left subtree. Visit the root.
+     * Finally traverse the right subtree.
+     * @param node where to start from.
+     */
     public void orderTraverse(TreeNode node) {
     	if(node != null) {
     		
@@ -65,6 +81,11 @@ public class BinaryTree {
     	
     	}
     }
+    /** 
+     * Visit the root. Traverse the left subtree. 
+     * Finally traverse the right subtree.
+     * @param node where to start from.
+     */
     public void preOrderTraverse(TreeNode node) {
     	if(node != null) {
     		
@@ -76,6 +97,11 @@ public class BinaryTree {
     	
     	 }
     }
+    /** 
+     * Traverse the left subtree. Then traverse the right subtree.
+     * Finally visit the root.
+     * @param node where to start from.
+     */
     public void postOrderTraverse(TreeNode node ) {
          if(node != null) {
 	
@@ -92,6 +118,11 @@ public class BinaryTree {
     	return root;
     }
 
+    /** 
+     * Finds the node with the corresponding key value.
+     * @param key the key looked for
+     * @return The tree node if found , else null
+     */
     public TreeNode find(int key){
     	if(root == null) { return null; }
     	TreeNode current = root;
@@ -109,7 +140,11 @@ public class BinaryTree {
     	
     	return current;
     }
-    
+    /**
+     * Removes the Node with the corresponding key value.
+     * @param key the node with that key, to be removed
+     * @return true if deleted, false if the element doesn't exist
+     */
     public boolean remove(int key){
     	if(root == null) { return false; } // the tree is empty, cant remove
     	
@@ -179,6 +214,12 @@ public class BinaryTree {
     	
     	return true;
     }
+    /** 
+     * Used in the delete method. Finds best match when the deleted Node,
+     * has 2 childs.
+     * @param current
+     * @return
+     */
 	private TreeNode findReplacement(TreeNode current) {
 		TreeNode parent = current;
 		TreeNode replacement = current;
@@ -198,13 +239,6 @@ public class BinaryTree {
 		
 		return replacement;
 	}
-	
-    
-    
-    
-    
-    
-
 }
 	
 

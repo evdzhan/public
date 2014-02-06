@@ -1,11 +1,18 @@
 package abstractDataTypes;
 
+/** 
+ * @author Evdzhan Mustafa 
+ * Abstract data type representing Singly Linked List.
+ * Each node has one pointer, to the next node.
+ * I have chosen to use Sentinel node, to point at the beginning of the Linked list.
+ * @version 1.0
+ */
 public class LinkedList {
 
 	private Node first = new Node();
 	
 	
-	/* Checks to see if the linked list is empty */
+	/** Checks to see if the linked list is empty */
 	public boolean isEmpty(){
 		 return first.getNext() == null;
 		

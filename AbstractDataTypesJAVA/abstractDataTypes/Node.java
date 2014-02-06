@@ -1,4 +1,11 @@
 package abstractDataTypes;
+
+/** 
+ * @author Evdzhan Mustafa 
+ * Node used by the Singly Linked List .
+ * @see LinkedList
+ * @version 1.0
+ */
 public class Node {
 
 	private Object data;

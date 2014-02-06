@@ -1,5 +1,11 @@
 package abstractDataTypes;
 
+/** 
+ * Abstract data type representing Stack.
+ * The stack is bounded i.e. it will run out of space eventually
+ * @author Evdzhan Mustafa 
+ * @version 1.0
+ */
 public class BoundedStack{
 
     private Object[] stack;

@@ -1,4 +1,12 @@
 package abstractDataTypes;
+
+
+/** 
+ * Node used by the in DoublyLinkedList .
+ * @author Evdzhan Mustafa 
+ * @see DoublyLinkedList
+ * @version 1.0
+ */
 public class DoublyNode {
 
 	private Object data;

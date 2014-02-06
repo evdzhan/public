@@ -1,4 +1,11 @@
 package abstractDataTypes;
+
+/** 
+ * Node used by the Binary Tree .
+ * @author Evdzhan Mustafa
+ * @version 1.0
+ * @see BinaryTree
+ */
 public class TreeNode {
 
     private Object data;

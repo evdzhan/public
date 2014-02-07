@@ -4,7 +4,7 @@ import abstractDataTypes.Person;
 
 	 
 	public static void main(String[] args) {
-		 Person a = new Person(27,"John",1500);
+		  Person a = new Person(27,"John",1500);
 		  Person b = new Person(26,"John",1500);
 		  Person c = new Person(35,"Ivan",1350);
 		  Person d = new Person(17,"Barbara",1200);

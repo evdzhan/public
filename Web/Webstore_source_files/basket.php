@@ -46,7 +46,7 @@ echo "</div><div class='contenta'>";
  /* Check to see if any  phones are added to the basket */
      if(isset($_SESSION['phonesAdded']) && count($_SESSION['phonesAdded'])>0 ) {
        $conn = pg_connect("host=db.dcs.aber.ac.uk port=5432
-      dbname=teaching user=csguest password=r3p41r3d");
+      dbname=teaching user=csguest password= ommited ");
 echo "<h3> ITEMS CURRENTLY IN THE BASKET </h3>
 <table border='1px'>
 <tr><th>MANUFACTURER </th>

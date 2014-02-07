@@ -69,7 +69,7 @@ echo "
  error_reporting(~E_ALL);
 
       $conn = pg_connect("host=db.dcs.aber.ac.uk port=5432
-      dbname=teaching user=csguest password=r3p41r3d") ;
+      dbname=teaching user=csguest password= ommited ") ;
 
     /*Test to see if the http request has GET values for maxium price and minimum price   */
 if(isset($_GET['minimumPrice']) && isset($_GET['maximumPrice'])  ) {

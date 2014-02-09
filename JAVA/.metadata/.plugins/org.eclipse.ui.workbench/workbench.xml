@@ -33,31 +33,21 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/Main.java" title="Main.java" tooltip="AbstractDataTypesJAVA/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="202" selectionTopPixel="119"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Palindrome.java" partName="Palindrome.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/Palindrome.java" title="Palindrome.java" tooltip="AbstractDataTypesJAVA/Palindrome.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/Palindrome.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1282" selectionTopPixel="213"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AVLNode.java" partName="AVLNode.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/abstractDataTypes/AVLNode.java" title="AVLNode.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/AVLNode.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/abstractDataTypes/AVLNode.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="396" selectionTopPixel="145"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedQueue.java" partName="BoundedQueue.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java" title="BoundedQueue.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="201" selectionTopPixel="47"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AVLTree.java" partName="AVLTree.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/abstractDataTypes/AVLTree.java" title="AVLTree.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/AVLTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/abstractDataTypes/AVLTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="674" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTree.java" partName="BinaryTree.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java" title="BinaryTree.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/abstractDataTypes/BinaryTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="244" selectionOffset="1432" selectionTopPixel="1146"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" partName="Person.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/abstractDataTypes/Person.java" title="Person.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/Person.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/abstractDataTypes/Person.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1217" selectionTopPixel="477"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedStack.java" partName="BoundedStack.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java" title="BoundedStack.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1" selectionOffset="322" selectionTopPixel="278"/>
 </editor>
 </editors>
 <views>
@@ -66,9 +56,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="381" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -133,7 +120,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -416,7 +403,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f8bf60e" ratio="0.75041324" ratioLeft="454" ratioRight="151" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f8bf60e" ratio="0.707438" ratioLeft="428" ratioRight="177" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -431,162 +418,160 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/AVLTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/AVLNode.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/Person.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/AVLTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/Palindrome.java"/>
 </editors>
-<item historyLabel="AVLTree.java" index="0">
-<position info="not_deleted" x="85" y="0"/>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="691" y="0"/>
 </item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="738" y="0"/>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="731" y="0"/>
 </item>
-<item historyLabel="Person.java" index="3">
+<item historyLabel="BoundedQueue.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Person.java" index="3">
-<position info="not_deleted" x="1135" y="0"/>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="731" y="0"/>
 </item>
-<item historyLabel="Person.java" index="3">
-<position info="not_deleted" x="1217" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="365" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="0">
-<position info="not_deleted" x="1026" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="775" y="0"/>
-</item>
-<item historyLabel="AVLNode.java" index="1">
-<position info="not_deleted" x="396" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="0">
-<position info="not_deleted" x="1081" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="775" y="0"/>
-</item>
-<item historyLabel="AVLNode.java" index="1">
-<position info="not_deleted" x="396" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="0">
-<position info="not_deleted" x="576" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="413" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="659" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="679" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="699" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="683" y="19"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="567" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="586" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="605" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="624" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="576" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="346" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="398" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="472" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="499" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="753" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="795" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="824" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="643" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="663" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="567" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="586" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="605" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="624" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="643" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="663" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="683" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="567" y="18"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="586" y="18"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="605" y="18"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="624" y="18"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="642" y="0"/>
-</item>
-<item historyLabel="AVLTree.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="884" y="0"/>
-</item>
-<item active="true" historyLabel="Main.java" index="5">
+<item historyLabel="BoundedQueue.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="731" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="1295" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="905" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="895" y="1"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="903" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position/>
+</item>
+<item historyLabel="BoundedQueue.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="502" y="0"/>
+</item>
+<item historyLabel="BoundedQueue.java" index="1">
+<position info="not_deleted" x="201" y="0"/>
+</item>
+<item historyLabel="BoundedStack.java" index="2">
+<position info="not_deleted" x="323" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="875" y="0"/>
+</item>
+<item historyLabel="BoundedQueue.java" index="1">
+<position info="not_deleted" x="201" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="875" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="910" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="896" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="910" y="0"/>
+</item>
+<item historyLabel="BoundedStack.java" index="2">
+<position info="not_deleted" x="770" y="0"/>
+</item>
+<item historyLabel="BoundedQueue.java" index="1">
+<position info="not_deleted" x="201" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="857" y="0"/>
+</item>
+<item historyLabel="BoundedStack.java" index="2">
+<position info="not_deleted" x="655" y="35"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="857" y="0"/>
+</item>
+<item historyLabel="BoundedStack.java" index="2">
+<position info="not_deleted" x="655" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="857" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="910" y="3"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="831" y="0"/>
+</item>
+<item historyLabel="BoundedQueue.java" index="1">
+<position info="not_deleted" x="201" y="0"/>
+</item>
+<item historyLabel="BoundedStack.java" index="2">
+<position info="not_deleted" x="770" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="831" y="0"/>
+</item>
+<item historyLabel="BoundedQueue.java" index="1">
+<position info="not_deleted" x="201" y="0"/>
+</item>
+<item historyLabel="BoundedStack.java" index="2">
+<position info="not_deleted" x="770" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="831" y="0"/>
+</item>
+<item historyLabel="BoundedStack.java" index="2">
+<position info="not_deleted" x="322" y="1"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="831" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="1069" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="1295" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="831" y="37"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="1145" y="0"/>
+</item>
+<item historyLabel="BoundedQueue.java" index="1">
+<position info="not_deleted" x="201" y="0"/>
+</item>
+<item historyLabel="BoundedStack.java" index="2">
+<position info="not_deleted" x="322" y="1"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="1145" y="0"/>
+</item>
+<item historyLabel="Palindrome.java" index="3">
+<position info="not_deleted" x="1276" y="0"/>
+</item>
+<item active="true" historyLabel="Palindrome.java" index="3">
+<position info="not_deleted" x="1282" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -609,6 +594,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedStack.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java">
+<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedQueue.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java">
+<persistable path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StackUsageExample.java" tooltip="AbstractDataTypesJAVA/StackUsageExample.java">
+<persistable path="/AbstractDataTypesJAVA/StackUsageExample.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Person.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/Person.java">
 <persistable path="/AbstractDataTypesJAVA/abstractDataTypes/Person.java"/>
 </file>

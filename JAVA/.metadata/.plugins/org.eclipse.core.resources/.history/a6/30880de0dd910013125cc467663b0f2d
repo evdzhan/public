@@ -1,0 +1,29 @@
+import abstractDataTypes.BoundedQueue;
+import abstractDataTypes.BoundedStack;
+
+ 
+
+
+
+
+ 
+
+public class Main {
+
+	/**
+	 * @param args
+	 * @throws Exception 
+	 */
+	public static void main(String[] args) {
+		
+		
+		BoundedStack bs = new BoundedStack();
+		BoundedQueue bq = new BoundedQueue();
+   
+ 
+	 
+		
+
+	}
+
+}

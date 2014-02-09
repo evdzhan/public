@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+import abstractDataTypes.BoundedQueue;
+import abstractDataTypes.BoundedStack;
+
+ 
+
+
+
+
+ 
+
+public class Main {
+
+	/**
+	 * @param args
+	 * @throws Exception 
+	 */
+	public static void main(String[] args) {
+		
+		
+		BoundedStack bs = new BoundedStack();
+		BoundedQueue bq = new BoundedQueue();
+		String stringToTest ;
+		Scanner scanny = new Scanner(System.in);
+		System.out.println("Enter the string to check : ");
+		stringToTest=scanny.next();
+		for(int i=0;i<stringToTest.length();i++) {
+		bs.push(stringToTest.charAt(i));
+		bq.add(stringToTest.charAt(i));
+		}
+		StringBuffer sb = new StringBuffer();
+		int size = bs.sizeOf();
+		for(int i = 0 ; i < size ; i ++ ) {
+			   
+			sb.append((char)bs.pop());
+		}
+		 String first = sb.toString();
+	    sb.setLength(0);
+	    size = bq.getLength();
+	    for(int i = 0 ; i < size ; i ++ ) {
+			   
+			sb.append((char)bq.remove());
+		}
+		 String second=sb.toString();
+		 
+		 if(first.compareTo(second) == 0) {
+			 System.out.println("The string is palindrome !");
+		 } else {
+			 System.out.println("The String is NOT palindrome.");
+		 }
+	    
+   
+ scanny.close()
+	 
+		
+
+	}
+
+}

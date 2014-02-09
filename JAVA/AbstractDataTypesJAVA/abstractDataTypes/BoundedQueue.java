@@ -10,7 +10,7 @@ package abstractDataTypes;
 
 public class BoundedQueue {
 
-	private final static int DEFAULT_MAX_SIZE=5;
+	private final static int DEFAULT_MAX_SIZE=10;
 	private Object[] theQueue;
 	private int first;
 	private int firstFree;

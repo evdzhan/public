@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="abstractDataTypes.Person"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="abstractDataTypes.AVLNode"/>
+<fullyQualifiedTypeName name="abstractDataTypes.AVLTree"/>
+</qualifiedTypeNameHistroy>

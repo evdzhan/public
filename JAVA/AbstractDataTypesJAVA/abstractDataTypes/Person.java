@@ -1,10 +1,11 @@
 package abstractDataTypes;
-
+ 
 public class Person implements Comparable<Person>{
 
 	private int age;
 	private String name;
 	private int salary;
+	 
 	public Person(int age,String name,int salary){
 		this.age=age; this.name=name; this.salary = salary;
 	}
@@ -50,6 +51,8 @@ public class Person implements Comparable<Person>{
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
-	
+	public String toString() {
+		return "Name : "+this.name+". Years : "+this.age +". Salary : "+this.salary;
+	}
 
 }

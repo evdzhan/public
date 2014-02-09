@@ -1,0 +1,18 @@
+package abstractDataTypes;
+
+public class AVLNode<E extends Comparable<E>> {
+	
+	public E data;
+	public AVLNode<E> left;
+	public AVLNode<E> right;
+	public static final int LEFT_HIGH  = -1 ;
+	public static final int RIGHT_HIGH = -1 ;
+	public static final int EQUAL_HIGH =  0 ;
+	public int balanceFactor;
+	
+	
+	
+	
+
+
+}

@@ -6,8 +6,9 @@ package abstractDataTypes;
  * @author Evdzhan Mustafa 
  * @version 1.0
  */
-public class BoundedStack{
-
+public class BoundedStack {
+  
+	
     private Object[] stack;
 	private int nextFree;
 	private static int DEFAULT_MAX_SIZE=5;
@@ -33,5 +34,6 @@ public class BoundedStack{
 	public int sizeOf(){
 		return nextFree;
 	}
+	
 
 }

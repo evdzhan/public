@@ -1,0 +1,16 @@
+package abstractDataTypes;
+
+public class AVLTree<E extends Comparable<E>> {
+
+	private AVLNode<E> root;
+	
+	public AVLTree() {
+		root = null;
+	}
+	
+	public void insert(E data) {
+		if(root == null) {
+			root = data;
+		}
+	}
+}

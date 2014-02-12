@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class EucildAlgorithm {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner scanny = new Scanner(System.in);
+		System.out.println("Enter first number : ");
+		long a =scanny.nextLong();
+        long b =scanny.nextLong();
+        
+        while(b != 0) {
+        	long rem = a % b ;
+        	
+        	a = b;
+        	
+        	b = rem;
+        	
+        }
+        
+        System.out.println(a);
+	}
+
+}

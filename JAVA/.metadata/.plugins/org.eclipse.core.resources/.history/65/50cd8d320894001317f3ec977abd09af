@@ -1,0 +1,9 @@
+package abstractDataTypes;
+
+
+public class GenericNode<T extends Comparable<? super T>> {
+
+	 
+	 
+
+}

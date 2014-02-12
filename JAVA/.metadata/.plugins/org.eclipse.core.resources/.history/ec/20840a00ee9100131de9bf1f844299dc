@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+ System.out.println("Enter the number : ");
+ Scanner scanny = new Scanner(System.in);
+ Object j =scanny.next();
+ 
+ 
+	}
+}

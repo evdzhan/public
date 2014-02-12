@@ -1,0 +1,39 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+
+public class RecursionExample {
+
+	public void start(){
+      
+     
+	 Scanner scanny = new Scanner(System.in);
+	 
+	 boolean keepGoing=true;
+	 
+	 int theInt=0;
+	 
+	 while(keepGoing) 	 {		 
+	 try {			
+		 System.out.println("Enter the number : ");
+		 theInt  =  scanny.nextInt();	keepGoing=false;		
+	 } catch(InputMismatchException e) 
+	 {
+		 keepGoing = true;
+	 }              	 
+	                     }
+	 System.out.println(this.digits(theInt));
+	 
+	 
+	 
+	 
+		}
+		 private int digits(int number){
+			if(number < 10 ) {
+				return 1;
+			} else {
+				return 1+ digits(number/10);
+			}
+		}
+
+}

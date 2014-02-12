@@ -33,11 +33,13 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Palindrome.java" partName="Palindrome.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/Palindrome.java" title="Palindrome.java" tooltip="AbstractDataTypesJAVA/Palindrome.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Palindrome.java" partName="Palindrome.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/Palindrome.java" title="Palindrome.java" tooltip="AbstractDataTypesJAVA/Palindrome.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/Palindrome.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1282" selectionTopPixel="213"/>
 </editor>
@@ -49,6 +51,14 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="1" selectionOffset="322" selectionTopPixel="278"/>
 </editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/Main.java" title="Main.java" tooltip="AbstractDataTypesJAVA/Main.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="46" selectionOffset="93" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RecursionExample.java" partName="RecursionExample.java" path="/home/evdjoint/Programming/JAVA/AbstractDataTypesJAVA/RecursionExample.java" title="RecursionExample.java" tooltip="AbstractDataTypesJAVA/RecursionExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/AbstractDataTypesJAVA/RecursionExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="112" selectionTopPixel="3"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -56,6 +66,11 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors (3 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="381" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -120,7 +135,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -403,7 +418,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f8bf60e" ratio="0.707438" ratioLeft="428" ratioRight="177" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f8bf60e" ratio="0.6859504" ratioLeft="415" ratioRight="190" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -422,70 +437,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedQueue.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/Palindrome.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/AbstractDataTypesJAVA/RecursionExample.java"/>
 </editors>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="691" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item historyLabel="BoundedQueue.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item historyLabel="BoundedQueue.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="731" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="1295" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="905" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="895" y="1"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="903" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position/>
-</item>
-<item historyLabel="BoundedQueue.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="502" y="0"/>
-</item>
-<item historyLabel="BoundedQueue.java" index="1">
-<position info="not_deleted" x="201" y="0"/>
-</item>
-<item historyLabel="BoundedStack.java" index="2">
-<position info="not_deleted" x="323" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="875" y="0"/>
-</item>
-<item historyLabel="BoundedQueue.java" index="1">
-<position info="not_deleted" x="201" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="875" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="890" y="0"/>
-</item>
 <item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="910" y="0"/>
 </item>
@@ -570,8 +524,71 @@
 <item historyLabel="Palindrome.java" index="3">
 <position info="not_deleted" x="1276" y="0"/>
 </item>
-<item active="true" historyLabel="Palindrome.java" index="3">
+<item historyLabel="Palindrome.java" index="3">
 <position info="not_deleted" x="1282" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="142" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="1" y="0"/>
+</item>
+<item historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="191" y="16"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="139" y="0"/>
+</item>
+<item historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="191" y="16"/>
+</item>
+<item historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="837" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="139" y="0"/>
+</item>
+<item historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="837" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="52" y="0"/>
+</item>
+<item historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="837" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="52" y="38"/>
+</item>
+<item historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="52" y="38"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="93" y="0"/>
+</item>
+<item historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="169" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="93" y="46"/>
+</item>
+<item historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="169" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="93" y="46"/>
+</item>
+<item active="true" historyLabel="RecursionExample.java" index="5">
+<position info="not_deleted" x="169" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -594,6 +611,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RecursionExample.java" tooltip="AbstractDataTypesJAVA/RecursionExample.java">
+<persistable path="/AbstractDataTypesJAVA/RecursionExample.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="AbstractDataTypesJAVA/Main.java">
+<persistable path="/AbstractDataTypesJAVA/Main.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BoundedStack.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java">
 <persistable path="/AbstractDataTypesJAVA/abstractDataTypes/BoundedStack.java"/>
 </file>
@@ -614,9 +637,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AVLNode.java" tooltip="AbstractDataTypesJAVA/abstractDataTypes/AVLNode.java">
 <persistable path="/AbstractDataTypesJAVA/abstractDataTypes/AVLNode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="AbstractDataTypesJAVA/Main.java">
-<persistable path="/AbstractDataTypesJAVA/Main.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComparableTest.java" tooltip="AbstractDataTypesJAVA/ComparableTest.java">
 <persistable path="/AbstractDataTypesJAVA/ComparableTest.java"/>

@@ -1,0 +1,21 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+
+public class RecursionExample {
+
+	public void start(){
+      
+     
+System.out.println(this.digits(123456789123456));
+	 
+		}
+		 private long digits(long number){
+			if(number < 10 ) {
+				return 1;
+			} else {
+				return 1+ digits(number/10);
+			}
+		}
+
+}

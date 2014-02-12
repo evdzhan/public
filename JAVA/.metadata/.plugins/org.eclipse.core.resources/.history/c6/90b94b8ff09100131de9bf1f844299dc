@@ -1,0 +1,18 @@
+ 
+
+public class RecursionExample {
+
+	public void start(){
+      
+ 
+	 
+		}
+		 private long digits(long number){
+			if(number < 10 ) {
+				return 1;
+			} else {
+				return 1+ digits(number/10);
+			}
+		}
+
+}

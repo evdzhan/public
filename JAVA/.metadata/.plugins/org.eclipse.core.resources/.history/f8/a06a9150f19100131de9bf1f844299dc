@@ -1,0 +1,26 @@
+ 
+
+
+public class RecursionExample {
+
+	public static void main(String[] args){
+		int number=10;
+		System.out.println("The number 10 has : "+digits(number)+" digits.");
+        number = 100;
+        System.out.println("The number 150 has : "+digits(number)+" digits.");
+        number = 1001;
+        System.out.println("The number 150 has : "+digits(number)+" digits.");
+        number = 10001;
+        System.out.println("The number 150 has : "+digits(number)+" digits.");
+        number = 100001;
+		}
+		 
+	static long digits(long number){
+			if(number < 10 ) {
+				return 1;
+			} else {
+				return 1+ digits(number/10);
+			}
+		}
+
+}

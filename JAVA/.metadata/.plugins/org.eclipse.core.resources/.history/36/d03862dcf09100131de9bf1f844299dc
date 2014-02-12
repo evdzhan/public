@@ -1,0 +1,21 @@
+ 
+
+
+public class RecursionExample {
+
+	public static void Main(String[] args){
+		int number=10;
+      System.out.print("The number 10 has :"digits(number));
+     
+	 
+		}
+		 
+	static long digits(long number){
+			if(number < 10 ) {
+				return 1;
+			} else {
+				return 1+ digits(number/10);
+			}
+		}
+
+}

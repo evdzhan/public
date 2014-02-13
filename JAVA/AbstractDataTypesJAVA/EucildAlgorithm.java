@@ -24,7 +24,6 @@ public class EucildAlgorithm {
 		
         long b =scanny.nextLong();
         
-        
         while(b != 0) {
         	long rem = a % b ;
         	

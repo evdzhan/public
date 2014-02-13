@@ -3,7 +3,7 @@
 /**
  * This class shows how a recursion can be
  *  used to show the number of digits in a given number. 
- *  M10/02/2014
+ *  10/02/2014
  * @author Evdzhan Mustafa enm3@aber.ac.uk
  * 
  * 

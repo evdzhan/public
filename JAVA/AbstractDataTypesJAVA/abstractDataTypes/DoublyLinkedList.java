@@ -4,7 +4,7 @@ package abstractDataTypes;
 
 /** 
  * Abstract data type representing Doubly Linked List.
- * Each node apart from the first, has two node pointers inside of it,namely next, and previous.
+ * Each node apart from the first and the last, has two node pointers inside of it,namely next, and previous.
  * I have chosen to use Sentinel node as a pointer to the beginning of the linked list.
  * @author Evdzhan Mustafa 
  * @see DoublyNode

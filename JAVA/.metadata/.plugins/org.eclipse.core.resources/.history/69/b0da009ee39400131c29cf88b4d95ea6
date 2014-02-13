@@ -1,0 +1,38 @@
+package abstractDataTypes;
+
+public class AVLTree<T extends Comparable<? super T>> {
+
+	 private static class AVLNode<T>{
+
+		 
+		 AVLNode<T>        left;
+		 AVLNode<T>        right;
+		 T                 data;
+		 int               height;
+		 AVLNode(T data){
+			 this(data,null,null);
+			 
+		 }
+		 AVLNode(T data,AVLNode<T> left,AVLNode<T> right){
+			 this.left   =     left;   // the left child
+			 this.right  =     right;  // the right child
+			 this.data   =     data;   // the data stored in the node
+			 this.height =     0;      // the Height
+		 }
+	 }
+
+	 
+	 private AVLNode<T> root;
+	 
+	 public void insert(T data) {
+		 root = this.insert(root, data);
+		  
+	 }
+	 private AVLNode<T> insert(AVLNode<T> parent,T data){
+		 if(parent == null) { return new AVLNode<>(data,null,null); }  // base case - new element is the root
+		 
+		 return null;
+	 }
+	 
+	 
+}

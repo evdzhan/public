@@ -65,11 +65,11 @@ public class Palindrome {
 		 
 		 if(first.compareToIgnoreCase(second) == 0) {
 			 
-			 System.out.println("The string is palindrome !");
+			 System.out.println("The string is  a  palindrome !");
 			 
 		 } else {
 			 
-			 System.out.println("The String is NOT palindrome.");
+			 System.out.println("NOT  a  palindrome.");
 		 }
 	    
    

@@ -1,6 +1,0 @@
-package abstractDataTypes;
-
-public class AVLTree<Comparable<E>> {
-
-	private AVLNode<E>
-}

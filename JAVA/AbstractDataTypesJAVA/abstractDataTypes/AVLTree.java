@@ -1,5 +1,14 @@
 package abstractDataTypes;
 
+/**
+ * A AVL tree class.
+ * A rewritten version of Mark Allen Weiss's AVLTree.
+ * 
+ * @author Evdzhan Mustafa enm3@aber.ac.uk
+ *
+ * @param <T> must implement comparable
+ */
+
 public class AVLTree<T extends Comparable<? super T>> {
 
 	 private static class AVLNode<T>{
@@ -18,6 +27,9 @@ public class AVLTree<T extends Comparable<? super T>> {
 			 this.right  =     right;  // the right child
 			 this.data   =     data;   // the data stored in the node
 			 this.height =     0;      // the Height
+		 }
+		 public String toString() {
+			 return data.toString();
 		 }
 	 }
 
@@ -70,39 +82,67 @@ public class AVLTree<T extends Comparable<? super T>> {
 			 }
 		 }
 		 
-		 
-		 return null;
+		 root.height = Math.max(getHeight(root.left), getHeight(root.right)) + 1 ;
+		 return root;
 	 }
 	 
-	 private AVLNode<T> doubleRotateRight(AVLNode<T> root) {
-		 
-		return null;
+	private AVLNode<T> doubleRotateRight(AVLNode<T> root) {
+		 root.right = singleRotateLeft(root.right);
+			return singleRotateRight(root);
 	}
 	
 	private AVLNode<T> doubleRotateLeft(AVLNode<T> root) {
-		 
-		return null;
+		 root.left = singleRotateRight(root.left);
+		return singleRotateLeft(root);
 	}
 	private int getHeight(AVLNode<T> node) {
 		 
 		 return node == null ? -1 : node.height ;
 	 }
-	 private AVLNode<T> singleRotateRight(AVLNode<T> root) {
+    private AVLNode<T> singleRotateRight(AVLNode<T> root) {
 		AVLNode<T> newRoot  = root.right;
 		root.right          = newRoot.left;
 		newRoot.left        = root;
-		newRoot.height      = Math.max( getHeight(newRoot.right), getHeight(newRoot.left)) + 1 ;
-		root.height         = Math.max(getHeight(root.right), newRoot.height)              + 1 ;
+		root.height         = Math.max(getHeight(root.right), getHeight(root.left)) + 1 ;
+		newRoot.height      = Math.max(getHeight(newRoot.right), root.height)          + 1 ;
 		return newRoot;
 	}
-	 private AVLNode<T> singleRotateLeft (AVLNode<T> root) {
+    private AVLNode<T> singleRotateLeft (AVLNode<T> root) {
 		 AVLNode<T> newRoot = root.left;
 		 root.left          = newRoot.right;
 		 newRoot.right      = root ;
-		 newRoot.height     = Math.max( getHeight(newRoot.left), getHeight(newRoot.right)) + 1 ;
-		 root.height        = Math.max( getHeight(root.left)   , newRoot.height)           + 1 ;
+		 root.height        = Math.max( getHeight(root.left)   , getHeight(newRoot))     + 1 ;
+		 newRoot.height     = Math.max( root.height, getHeight(newRoot.right))           + 1 ;
 		 return newRoot;
 	 }
 	 
+    private void onOrderTraverse( AVLNode<T> t )
+	    {
+	        if( t != null )
+	        {
+	        	onOrderTraverse( t.left );
+	            
+	        	System.out.println( t.data );
+
+	        	onOrderTraverse( t.right );
+	        }
+	    }
+    public static void main( String [ ] args )
+    {
+        AVLTree<Integer> t = new AVLTree<>( );
+        t.insert(50); 
+        t.insert(30);
+        t.insert(80);
+        t.insert(40);
+        t.insert(60);
+        t.insert(90);
+        t.insert(95);
+        t.insert(96);
+        t.insert(97);
+        t.insert(99);
+        t.insert(75);
+        t.onOrderTraverse(t.root);
+    }
 }
+
 		

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item value="0" key="sort"/>
+		<item value="false" key="allPersp"/>
+		<list key="bounds">
+			<item value="252"/>
+			<item value="0"/>
+			<item value="868"/>
+			<item value="587"/>
+		</list>
+		<list key="columns">
+			<item value="279"/>
+			<item value="559"/>
+		</list>
+	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
 		<item value="261" key="DIALOG_X_ORIGIN"/>

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 
+
 /**
  * This class finds the greatest common divisor among two numbers.
  * It uses the Eucild's Algorithm. -> http://en.wikipedia.org/wiki/Euclidean_algorithm

@@ -1,10 +1,17 @@
+/*
+ * @author Evdzhan Mustafa
+ * 
+ *  An array of pointers kept in the heap.
+ *  "Efficient programming "
+ */
+
 #include <stdlib.h>
 #include <iostream>
 using namespace std;
 
 
 
-int main(int argc, char** argv) {
+int main() {
 
    cout << "\nShow array of pointers using malloc...\n";
     int ** array;

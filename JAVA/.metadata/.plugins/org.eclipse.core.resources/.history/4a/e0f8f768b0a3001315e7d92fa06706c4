@@ -1,0 +1,13 @@
+package cs22510_2014;
+
+public class Main {
+	 
+	 
+	 
+	public static void main(String[] args) {
+		
+		ArrayList<Type> = new <Type>ArrayList();
+		
+	}
+
+}

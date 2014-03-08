@@ -1,0 +1,15 @@
+package sorting2014;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		int pivot = (int)((Math.random()) *2) ;
+		System.out.println(pivot);
+	}
+
+}

@@ -1,0 +1,19 @@
+package cs22510_2014;
+
+public class Main {
+	 
+	enum gosho  { 
+		;
+		int a = 10;
+		String b = " asd";
+	};
+	 
+	public static void main(String[] args) {
+		
+		 gosho a = 10; 
+		a.a = 1;
+		
+   
+	}
+
+}

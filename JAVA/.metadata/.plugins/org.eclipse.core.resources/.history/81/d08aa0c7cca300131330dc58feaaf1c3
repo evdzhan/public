@@ -1,0 +1,71 @@
+package cs22510_2014;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+ 
+
+public class Model {
+	
+	 
+	 private final static String GGA = "GGA";
+	 private final static String GSA = "GSA";
+	 private final static String GSV = "GSV";
+	 private final static String RMC = "RMC";
+	 private boolean satelitesAreOK;
+	 
+	 
+	 private List<String> thelist ;
+	 private BufferedReader br;
+	 private String currentLine;
+	 private Queue<String> currentData;
+	 public Model() {
+		 satelitesAreOK=false;
+		 
+		  thelist = new ArrayList<String>();
+		try {
+			
+			 br = new BufferedReader(new FileReader("/home/evdjoint/gps_1.dat"));
+			 
+			 printSomething();
+		} catch (IOException e) {
+			 e.printStackTrace();
+		}
+		  
+	 }
+	 
+
+	 public void printSomething()  {
+		 
+		try {
+		 	
+		 while((currentLine = br.readLine()) != null ) {
+			 
+			 if(currentLine.substring(3, 6).equals(GSV)) {
+				 
+				 int numLines=0;
+				 try {
+				  numLines = Integer.parseInt(currentLine.substring(8, 9));
+				  boolean isOk=Integer.parseInt(currentLine.SubString(25, 26)) > 29;
+				  for(int i=0;i<numLines;i++){
+					 if()
+				 }
+				 } catch (NumberFormatException e) {e.printStackTrace(); }
+				 
+			 }  else {
+				 currentData.add(currentLine);
+			 }
+			 
+		 }
+		 
+		} catch (IOException e ) { e.printStackTrace() ; }
+	      
+		
+	 }
+	  
+		    
+
+}

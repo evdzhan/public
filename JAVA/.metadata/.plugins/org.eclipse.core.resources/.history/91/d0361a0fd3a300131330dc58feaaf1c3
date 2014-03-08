@@ -1,0 +1,48 @@
+package cs22510_2014;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import java.util.ArrayList;
+import java.util.List;
+ 
+ 
+
+public class Model {
+	
+	 
+	 private final static String GGA = "GGA";
+	 private final static String GSA = "GSA";
+	 private final static String GSV = "GSV";
+	 private final static String RMC = "RMC";
+	 private boolean satelitesAreOK;
+	 private Hour t;
+	 
+	    
+	 private BufferedReader br;
+	 private String currentLine;
+	 private List<String> currentData;
+	 public Model() {
+		  satelitesAreOK = false;
+		  currentData    = new ArrayList<String>();
+		   
+		try {
+			
+			 br = new BufferedReader(new FileReader("/home/evdjoint/gps_1.dat"));
+			 
+			 printSomething();
+		} catch (IOException e) {
+			 e.printStackTrace();
+		}
+		  
+	 }
+	 
+
+	 public void printSomething()  {}
+		 
+	
+	  
+		    
+
+}

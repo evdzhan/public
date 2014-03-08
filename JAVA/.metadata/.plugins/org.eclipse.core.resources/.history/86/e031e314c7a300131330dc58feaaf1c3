@@ -1,0 +1,65 @@
+package cs22510_2014;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+ 
+
+public class Model {
+	
+	 
+	 private final static String GGA = "$GPGGA";
+	 private final static String GSA = "$GPGSA";
+	 private final static String GSV = "$GPGSV";
+	 private final static String RMC = "$GPRMC";
+	 
+	 
+	 
+	 private List<String> thelist ;
+	 private BufferedReader br;
+	 
+	 public Model() {
+		 thelist = new ArrayList<String>();
+		try {
+			
+			 br = new BufferedReader(new FileReader("/home/evdjoint/gps_1.dat"));
+			 printSomething();
+		} catch (IOException e) {
+			 e.printStackTrace();
+		}
+		  
+	 }
+	 
+
+	 public void printSomething()  {
+		 int i=0;
+		 String x;
+		try { 
+			while(( x = br.readLine()) != null ) {
+			
+				 
+                 if(x.substring(0, 6).equals(RMC)) {
+                	i++;
+                	thelist.add(x.substring(12, 13) );
+                 }
+		
+		  	
+			}
+		} catch (Exception e ) { }
+	     for(String b : thelist) {
+	    	 System.out.println(b);
+	     }
+	      
+		
+	 }
+	  
+		    
+		 
+	  
+	  
+
+}

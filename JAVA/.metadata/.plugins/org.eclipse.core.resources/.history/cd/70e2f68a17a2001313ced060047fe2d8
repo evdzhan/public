@@ -1,0 +1,19 @@
+package cs22510_2014;
+
+public class Main {
+	 
+	public enum gosho  { 
+		PI  , LOL ;
+	};
+	 
+	public static void main(String[] args) {
+		
+		gosho a= gosho.LOL;
+		for(gosho b : gosho) {
+			System.out.println(b);
+		}
+		
+   
+	}
+
+}

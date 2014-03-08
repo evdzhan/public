@@ -1,4 +1,5 @@
-//org.eclipse.ui.commands/state/org.eclipse.ui.window.lockToolBar/org.eclipse.ui.commands.toggleState=true
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=
+coolBarVisible=false
 eclipse.preferences.version=1
-org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands/>
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands>\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+F11"/>\n<keyBinding commandId\="org.eclipse.debug.ui.commands.RunLast" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="TAB"/>\n</org.eclipse.ui.commands>
+perspectiveBarVisible=false

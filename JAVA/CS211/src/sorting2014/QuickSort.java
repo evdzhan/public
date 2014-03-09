@@ -43,20 +43,16 @@ public class QuickSort implements Sorter {
 		int arrSize = last - first + 1; // determine the (sub)array's size
 
 		if (arrSize < 2) {
-			return;
-		} // if only one item in the array - it is sorted
+			return; // if only one item in the array - it is sorted
+		} 
 
-		int pivot = first + ((last - first) / 2); // the pivot index - the
-													// middle element
+		int pivot = first + ((last - first) / 2); // the pivot index - the middle element
 
-		pivot = parition(items, first, last, pivot); // move the pivot to it's
-														// correct position (
-														// sort )
+		pivot = parition(items, first, last, pivot); // moves the pivot to it's correct position 
 
-		quicksort(items, first, pivot - 1); // recursively sort the sub array
-											// left from the pivot
-		quicksort(items, pivot + 1, last); // recursively sort the sub array
-											// right from the pivot
+		quicksort(items, first, pivot - 1); // recursively sort the sub array left from the pivot
+		
+		quicksort(items, pivot + 1, last); // recursively sort the sub array right from the pivot
 
 	}
 
@@ -78,14 +74,11 @@ public class QuickSort implements Sorter {
 
 		int swap = left + 1; // set the initial swap position
 
-		for (int i = swap; i <= right; i++) { // loop through swap until
-												// right(inclusive)
+		for (int i = swap; i <= right; i++) { // loop through swap until right(inclusive)
 
-			if (items[left].compareTo(items[i]) > 0) { // compare the current
-														// item with the pivot
+			if (items[left].compareTo(items[i]) > 0) { // compare the current item with the pivot
 
-				swap(items, swap, i); // swap the current item with the swap
-										// position
+				swap(items, swap, i); // swap the current item with the swap position
 				swap++; // move the swap position to the right
 			}
 
@@ -108,11 +101,9 @@ public class QuickSort implements Sorter {
 	 */
 	private void swap(Comparable[] items, int indexFirst, int secondSecond) {
 
-		Comparable temp = items[indexFirst]; // store the first in temporary
-												// variable
+		Comparable temp = items[indexFirst]; // store the first in temporary variable
 
-		items[indexFirst] = items[secondSecond]; // change the first to the
-													// second's value
+		items[indexFirst] = items[secondSecond]; // change the first to the second's value
 
 		items[secondSecond] = temp; // change the second to the first's value
 

@@ -1,0 +1,34 @@
+package sorting2014;
+
+public class ShellSort implements Sorter {
+
+	@Override
+	public void sort(Comparable[] items, int cutoff) {
+		shellSort(items);
+		
+	}
+	private void shellSort(Comparable[] a) {
+		 
+	        for( int gap = a.length / 2; gap > 0;
+	                     gap = gap == 2 ? 1 : (int) ( gap / 2.1 ) ){
+	        	
+	        	System.out.println("gap is : "+ gap);
+	            for( int i = gap; i < a.length; i++ )
+	            {
+	                Comparable tmp = a[ i ];
+	                int j = i;
+
+	                for( ; j >= gap  ; j -= gap ){
+	                	if( tmp.compareTo( a[ j - gap ] ) >= 0) {
+	                		break;
+	                	}
+	                	     a[ j ] = a[ j - gap ]; 
+	                }
+	              
+	                a[ j ] = tmp;
+	               
+	            }
+	        }
+	}
+
+}

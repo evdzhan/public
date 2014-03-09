@@ -1,0 +1,10 @@
+package sorting2014;
+
+public class InsertionSort implements Sorter {
+
+	
+	public void sort() {
+		
+	}
+	
+}

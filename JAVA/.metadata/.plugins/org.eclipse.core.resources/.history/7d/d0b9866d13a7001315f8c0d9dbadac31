@@ -1,0 +1,15 @@
+package sorting2014;
+@SuppressWarnings("rawtypes")
+public class InsertionSort implements Sorter {
+
+	
+	 
+
+	
+	@Override
+	public void sort(Comparable[] items, int cutoff) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

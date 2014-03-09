@@ -1,0 +1,46 @@
+package sorting2014;
+@SuppressWarnings("rawtypes")
+public class InsertionSort implements Sorter {
+
+	
+	 
+
+	
+	@Override
+	public void sort(Comparable[] items, int cutoff) {
+		   this.insertionSort(items);
+		
+	}
+	
+	
+	
+	
+	
+	@SuppressWarnings("unchecked")
+	public void insertionSort(Comparable[] items) {
+		
+		for ( int i = 1 ; i < items.length ; ++i) {
+			
+			Comparable temp = items[i];
+			int j ;
+			for(j = i - 1; j >= 0; --j) {
+				
+				if(items[j].compareTo(temp) < 0) {
+					break;
+				} 
+				Comparable swapped = items[j];
+				 items[j] = items[j+1];
+				 items[j+1] = items[j];
+				
+				
+			}
+			
+			
+		}
+		
+		
+	}
+	
+	 
+	
+}

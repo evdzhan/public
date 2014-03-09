@@ -1,0 +1,68 @@
+package sorting2014;
+
+
+
+	public class MergeSort implements Sorter {
+
+		 
+		@SuppressWarnings("unchecked")
+		public void sort(Comparable[] items, int cutoff) {
+			items  = mergeSort(items);
+		}
+		
+		public Comparable[] mergeSort(Comparable array[]){
+			
+			if(array.length > 1)
+			{
+				int elementsInA1 = array.length / 2;
+				
+				int elementsInA2 = array.length - elementsInA1;
+		         
+				Comparable arr1[] = new Comparable[elementsInA1];
+				Comparable arr2[] = new Comparable[elementsInA2];
+				for(int i = 0; i < elementsInA1; i++)
+					arr1[i] = array[i];
+				for(int i = elementsInA1; i < elementsInA1 + elementsInA2; i++)
+					arr2[i - elementsInA1] = array[i];
+				arr1 = mergeSort(arr1);
+				arr2 = mergeSort(arr2);
+		 
+				 
+				int i = 0, j = 0, k = 0;
+				 
+				while(arr1.length != j && arr2.length != k)
+				{
+					 
+					if(arr1[j].compareTo(arr2[k]) < 0)
+					{
+						 
+						array[i] = arr1[j];
+						 i++;
+						 j++;
+					}
+					 
+					else
+					{ array[i] = arr2[k];
+					  i++;
+					  k++;
+					}
+				}
+				 
+				while(arr1.length != j)
+				{
+					array[i] = arr1[j];
+					i++;
+					j++;
+				}
+				while(arr2.length != k)
+				{
+					array[i] = arr2[k];
+					i++;
+					k++;
+				}
+			}
+			 
+			return array;
+		}
+	
+}

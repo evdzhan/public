@@ -28,4 +28,6 @@
 <fullyQualifiedTypeName name="sorting2014.Sorter"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.awt.SecondaryLoop"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

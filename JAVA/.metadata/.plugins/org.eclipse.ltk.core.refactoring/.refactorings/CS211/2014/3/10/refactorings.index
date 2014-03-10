@@ -4,3 +4,8 @@
 1394313966705	Delete element
 1394369604357	Rename local variable 'tmp'
 1394369655962	Rename local variable 'j'
+1394377081669	Rename local variable 'high'
+1394377116332	Rename local variable 'i'
+1394377127493	Rename local variable 'u'
+1394377131946	Rename local variable 'k'
+1394377713855	Rename field 'items'

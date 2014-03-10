@@ -1,0 +1,75 @@
+package sorting2014;
+
+public class MergeSort implements Sorter {
+	private Comparable[] primaryArr;
+	private Comparable[] secondaryArr;
+
+	@SuppressWarnings("unchecked")
+	public void sort(Comparable[] items, int cutoff) {
+
+		this.primaryArr = items;
+
+		secondaryArr = new Comparable[items.length];
+
+		mergeSort(0, items.length - 1);
+
+	}
+/**
+ *  Merge sort - works by continually splitting the array in halves.
+ *  Split in halves until arrays of size 1 is left. This is achieved by 
+ *  recursive calls. After both arrays are of size split , they are
+ *  sorted and then rearranged into, the primary array.
+ *  
+ * @param first the index of the first element in the (sub)array
+ * @param last the index of the last element in the (sub)array
+ */
+	private void mergeSort(int first, int last) {
+
+		if (first < last) {  //  i.e. split only if the array size is > 1
+
+			int mean = first + ((last - first) / 2);
+
+			mergeSort(first, mean);
+
+			mergeSort(mean + 1, last);
+
+			merge(first, mean, last);
+
+		}
+
+	}
+
+	private void merge(int first, int mean, int last) {
+
+		for (int i = first; i <= last; i++) {
+
+			secondaryArr[i] = primaryArr[i];
+
+		}
+
+		int o = first;
+		int u = mean + 1;
+		int y = first;
+
+		while (o <= mean && u <= last) {
+
+			if (secondaryArr[o].compareTo(secondaryArr[u]) <= 0) {
+				primaryArr[y] = secondaryArr[o];
+				o++;
+			} else {
+				primaryArr[y] = secondaryArr[u];
+				u++;
+
+			}
+			y++;
+
+		}
+		while (o <= mean) {
+			primaryArr[y] = secondaryArr[o];
+			o++;
+			y++;
+		}
+
+	}
+
+}

@@ -12,7 +12,8 @@ public class SelectionSort implements Sorter {
 	 * The method works by continually looping through the array. After each
 	 * loop the lowest value's index is recorded, i.e it is selected . The
 	 * lowest value is then put to the beginning of the array, or after the
-	 * previous least value.
+	 * previous recorded least value. Said simply we continually search for the 
+	 * next lowest value, and put it after the last know lowest value.
 	 * 
 	 * @param items
 	 *            the array to be sorted.

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;CS211&apos;&#x0A;- Original project: &apos;CS211&apos;&#x0A;- Original element: &apos;CS211/src/sort&apos;" description="Delete element" element1="/src&lt;sort" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1394470974970" subPackages="false" version="1.0"/>
+</session>

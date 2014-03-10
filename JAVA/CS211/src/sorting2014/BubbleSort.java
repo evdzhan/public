@@ -8,11 +8,7 @@ package sorting2014;
 
 public class BubbleSort implements Sorter {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see sorting.Sorter#sort(java.lang.Comparable[])
-	 */
+	 
 	@SuppressWarnings("unchecked")
 	public void sort(Comparable[] items, int cutoff) {
 		Comparable temp;

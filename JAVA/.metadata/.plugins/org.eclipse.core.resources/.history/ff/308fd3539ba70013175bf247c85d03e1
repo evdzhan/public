@@ -1,0 +1,93 @@
+package sorting2014;
+
+public class MergeSort implements Sorter {
+	private Comparable[] items;
+	private Comparable[] secondaryArr;
+
+	@SuppressWarnings("unchecked")
+	public void sort(Comparable[] items, int cutoff) {
+		this.items = items;
+		secondaryArr = new Comparable[items.length];
+		mergeSort(0, items.length - 1);
+	}
+
+	private void mergeSort(int first, int last) {
+
+		if (first < last) {
+
+			int mean = first + ((last - first) / 2);
+			mergeSort(first, mean);
+
+			mergeSort(mean + 1, last);
+
+			merge(first, mean, last);
+
+		}
+
+	}
+
+	private void merge(int first, int mean, int last) {
+
+		
+		
+		 // Copy both parts into the helper array
+		for (int i = first; i <= last; i++) {
+            secondaryArr[i] = items[i];
+
+		}
+
+	    int o = first;
+	    int u = mean + 1;
+	    int k = first;
+	    // Copy the smallest values from either the left or the right side back
+	    // to the original array
+	    while (o <= mean && u <= last) {
+	      if (secondaryArr[o].compareTo(secondaryArr[u]) <= 0) {
+	        items[k] = secondaryArr[o];
+	        o++;
+	      } else {
+	        items[k] = secondaryArr[u];
+	        u++;
+	      }
+	      k++;
+	    }
+	    // Copy the rest of the left side of the array into the target array
+	    while (o <= mean) {
+	      items[k] = secondaryArr[o];
+	      k++;
+	      o++;
+	    }
+	
+		
+		/*for (int i = first; i <= last; i++) {
+              secondaryArr[i] = items[i];
+
+		}
+
+		int o = first;
+		int u = mean + 1;
+		int y = first;
+
+		while (o <= mean && u <= last) {
+
+			if (secondaryArr[o].compareTo(secondaryArr[u]) <= 0) {
+				items[y] = secondaryArr[o];
+				o++;
+			} else {
+				items[y] = secondaryArr[u];
+				u++;
+
+			}
+			y++;
+
+			while (o <= mean) {
+				items[y] = secondaryArr[o];
+				o++;
+				y++;
+
+			}
+		}
+ */
+	}
+ 
+}

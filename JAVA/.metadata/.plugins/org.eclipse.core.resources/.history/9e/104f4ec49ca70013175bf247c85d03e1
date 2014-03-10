@@ -1,0 +1,62 @@
+package sorting2014;
+
+public class MergeSort implements Sorter {
+	private Comparable[] primaryArr;
+	private Comparable[] secondaryArr;
+
+	@SuppressWarnings("unchecked")
+	public void sort(Comparable[] items, int cutoff) {
+		this.primaryArr = items;
+		secondaryArr = new Comparable[items.length];
+		mergeSort(0, items.length - 1);
+	}
+
+	private void mergeSort(int first, int last) {
+
+		if (first < last) {
+
+			int mean = first + ((last - first) / 2);
+			mergeSort(first, mean);
+
+			mergeSort(mean + 1, last);
+
+			merge(first, mean, last);
+
+		}
+
+	}
+
+	private void merge(int first, int mean, int last) {
+		
+		for (int i = first; i <= last; i++) {
+			
+			secondaryArr[i] = primaryArr[i];
+			
+		}
+
+		int o = first;
+		int u = mean + 1;
+		int y = first;
+
+		while (o <= mean && u <= last) {
+
+			if (secondaryArr[o].compareTo(secondaryArr[u]) <= 0) {
+				primaryArr[y] = secondaryArr[o];
+				o++;
+			} else {
+				primaryArr[y] = secondaryArr[u];
+				u++;
+
+			}
+			y++;
+
+		}
+		while (o <= mean) {
+			primaryArr[y] = secondaryArr[o];
+			o++;
+			y++;
+		}
+
+	}
+
+}

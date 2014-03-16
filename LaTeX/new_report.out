@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{The Experiment }{}% 2
+\BOOKMARK [1][-]{section.3}{Best case O\(n2\) algorithms.}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Bubble Sort}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Selection Sort}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Insertion Sort}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{O\(n2\) algorithms comparison}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Best case O\(n log2 n\) algorithms.}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Quick Sort}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Merge Sort}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Shell Sort}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{O\(n log2 n\) algorithms comparison}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Address based algorithms}{}% 13
+\BOOKMARK [1][-]{section.6}{Conclusions. }{}% 14
+\BOOKMARK [1][-]{appendix.A}{Acknowledgements.}{}% 15
+\BOOKMARK [2][-]{subsection.A.1}{References}{appendix.A}% 16
+\BOOKMARK [1][-]{appendix.B}{Headings in Appendices}{}% 17
+\BOOKMARK [2][-]{subsection.B.1}{Introduction}{appendix.B}% 18
+\BOOKMARK [2][-]{subsection.B.2}{The experiment}{appendix.B}% 19
+\BOOKMARK [3][-]{subsubsection.B.2.1}{Best case O\(n2\) algorithms.}{subsection.B.2}% 20
+\BOOKMARK [3][-]{subsubsection.B.2.2}{Best case O\(n log2 n\) algorithms.}{subsection.B.2}% 21
+\BOOKMARK [3][-]{subsubsection.B.2.3}{Address based algorithms}{subsection.B.2}% 22
+\BOOKMARK [2][-]{subsection.B.3}{Conclusion.}{appendix.B}% 23
+\BOOKMARK [2][-]{subsection.B.4}{Acknowledgements.}{appendix.B}% 24
+\BOOKMARK [2][-]{subsection.B.5}{References}{appendix.B}% 25

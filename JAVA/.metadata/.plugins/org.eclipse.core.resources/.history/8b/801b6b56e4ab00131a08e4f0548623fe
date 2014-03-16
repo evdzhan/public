@@ -1,0 +1,53 @@
+package sorting2014;
+
+@SuppressWarnings({ "unchecked", "rawtypes" })
+public class SelectionSort implements Sorter {
+
+	public void sort(Comparable[] items, int cutoff) {
+
+		selectionSort(items);
+	}
+
+	/**
+	 * The method works by continually looping through the array. After each
+	 * loop the lowest value's index is recorded, i.e it is selected . The
+	 * lowest value is then put to the beginning of the array, or after the
+	 * previous recorded least value. Said simply we continually search for the
+	 * next lowest value, and put it after the last know lowest value.
+	 * 
+	 * @param items
+	 *            the array to be sorted.
+	 */
+	static private void selectionSort(Comparable[] items) {
+
+		int min; // index of the current lowest value
+
+		for (int i = 0; i < items.length; i++) {
+			
+			min = i; // assume that the lowest element in this loop is the first
+						// one
+
+			for (int j = i + 1; j < items.length; j++) {
+
+				if (items[min].compareTo(items[j]) > 0) {
+					min = j; // if the previous lowest value is higher , mark
+								// this as the lowest
+
+				}
+
+			}
+
+			if (min != i) { // if the earlier assumption is true, keep it this
+							// way - it is in place.
+
+				// if it's not , then put the lowest value to its place
+				Comparable temp = items[i];
+				items[i] = items[min];
+				items[min] = temp;
+			}
+
+		}
+
+	}
+
+}

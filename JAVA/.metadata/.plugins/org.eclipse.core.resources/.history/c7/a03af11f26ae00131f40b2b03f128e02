@@ -1,0 +1,23 @@
+package cs22510_2014;
+
+import java.util.Date;
+
+public class Location {
+	public double latitude;
+	public double longitude;
+
+	public String toString() {
+		return latitude + " " + longitude;
+	}
+	public Location offset(Location l) {
+		Location loc = new Location();
+		loc.latitude = l.latitude-this.latitude;
+		loc.longitude = l.longitude-this.longitude;
+		 
+		return loc;
+	}
+	public void addOffset(Location offset){
+		this.latitude +=offset.latitude;
+		this.longitude += offset.longitude;
+	}
+}

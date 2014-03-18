@@ -1,0 +1,15 @@
+package cs22510_2014;
+
+import java.util.Date;
+
+public class Location {
+	public double latitude;
+	public double longitude;
+
+	public String toString() {
+		return latitude + " " + longitude;
+	}
+	public Location offeset(Location l) {
+		
+	}
+}

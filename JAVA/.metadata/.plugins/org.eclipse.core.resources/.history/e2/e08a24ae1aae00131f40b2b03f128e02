@@ -1,0 +1,29 @@
+package cs22510_2014;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		double longitude, latitude;
+		String degreesN = "5225.9627";//,N 00401.1624,W";
+		double degrees = Double.parseDouble(degreesN)  ;
+		int a = (int) degrees/100;
+		
+        double minutes = degrees % 100 /10000 *60 ;
+       
+		 System.out.println(  minutes);
+
+		/*
+		 * String file1 = "/home/evdjoint/gps_1.dat"; String file2 =
+		 * "/home/evdjoint/gps_2.dat";
+		 * 
+		 * Controller controller = new Controller(file1,file2); boolean a =
+		 * controller.synchronizeTimes(); if (a) { controller.start(); }
+		 * 
+		 * 
+		 * /*System.out.println(a); controller.stream2.read();
+		 * System.out.println(controller.stream1.satelitesAreOK);
+		 * System.out.println(controller.stream2.satelitesAreOK);
+		 */}
+
+}

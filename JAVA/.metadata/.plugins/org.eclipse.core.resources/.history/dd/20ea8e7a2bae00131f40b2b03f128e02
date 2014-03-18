@@ -1,0 +1,96 @@
+package cs22510_2014;
+
+import java.util.ArrayList;
+
+public class Controller {
+	Model stream1, stream2;
+	ArrayList<Location> locations;
+	Location offset;
+
+	public Controller(String file1, String file2) {
+
+		stream1 = new Model(file1);
+		stream2 = new Model(file2);
+		locations = new ArrayList<>();
+	}
+
+	public boolean synchronizeTimes() {
+		String data = "";
+		while (!data.equals(Model.GPS_TIME) && !data.equals(Model.EOF)) {
+			data = stream1.read();
+
+		}
+		if (data.equals(Model.EOF)) {
+			return false;
+		}
+
+		data = "";
+		while (!data.equals(Model.GPS_TIME) && !data.equals(Model.EOF)) {
+			data = stream2.read();
+		}
+		if (data.equals(Model.EOF)) {
+			return false;
+		}
+
+		int time = stream1.time.compareTo(stream2.time);
+
+		if (time == -1) {
+			do {
+				data = stream1.read();
+				if (data == Model.EOF)
+					return false;
+				if (data.equals(Model.GPS_TIME)) {
+					time = stream1.time.compareTo(stream2.time);
+
+				}
+			} while (time != 0);
+
+		} else if (time == 1) {
+			do {
+				data = stream2.read();
+				if (data == Model.EOF)
+					return false;
+				if (data.equals(Model.GPS_TIME)) {
+					time = stream1.time.compareTo(stream2.time);
+
+				}
+			} while (time != 0);
+
+		}
+		return true;
+	}
+
+	public void start() {
+		while (true) {
+			if (stream1.satelitesAreOK) {
+				locations.add(stream1.currentLoc);
+				if(stream2.satelitesAreOK) {
+					
+				this.offset = stream1.currentLoc.offset(stream2.currentLoc);
+						
+				}
+ 
+			} else {
+				break;
+			}
+
+		}
+
+	}
+
+	public void synchronizeGPS() {
+
+		if (!stream1.satelitesAreOK) {
+			while (!stream1.satelitesAreOK) {
+				stream1.read();
+			}
+		}
+		if (!stream2.satelitesAreOK) {
+			while (!stream2.satelitesAreOK) {
+				stream2.read();
+			}
+		}
+
+	}
+
+}

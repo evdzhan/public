@@ -1,0 +1,9 @@
+package cs22510_2014;
+
+public class Time {
+
+	public int second;
+	public int minute;
+	public int hour;
+	
+}

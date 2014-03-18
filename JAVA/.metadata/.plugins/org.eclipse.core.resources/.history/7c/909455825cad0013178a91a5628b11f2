@@ -1,0 +1,42 @@
+package cs22510_2014;
+
+public class Controller {
+	Model stream1,stream2;
+	public Controller(String file1, String file2) {
+	
+		  stream1 = new Model(file1);
+		  stream2 = new Model(file2);
+		String data = "";
+		while (!data.equals("coordinate")) {
+			data = stream1.read();
+		}
+		data = "";
+		while (!data.equals("coordinate")) {
+			data = stream2.read();
+		}
+
+		int time = stream1.time.compareTo(stream2.time);
+		
+		if (time == 0) {
+
+		} else if (time == -1) {
+			do {
+			data = stream1.read();
+			if(data.equals("coordinate")) {
+				time = stream1.time.compareTo(stream2.time);
+				
+			}
+			} while ( time != 0 );
+
+		} else {
+			do {
+				data = stream2.read();
+				if(data.equals("coordinate")) {
+					time = stream1.time.compareTo(stream2.time);
+					
+				}
+				} while ( time != 0 );
+
+		}
+	}
+}

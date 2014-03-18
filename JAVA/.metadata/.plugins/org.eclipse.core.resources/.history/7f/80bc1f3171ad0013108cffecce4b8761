@@ -1,0 +1,26 @@
+package cs22510_2014;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 
+		
+		
+		
+		
+		String file1 = "/home/evdjoint/gps_1.dat";
+		String file2 = "/home/evdjoint/gps_2.dat";
+		
+		Controller  controller = new Controller(file1,file2);
+	 	boolean a = controller.synchronizeTimes();
+	 	System.out.println(a);
+            System.out.println(controller.stream1.time);
+            System.out.println(controller.stream2.time);
+	}
+
+}

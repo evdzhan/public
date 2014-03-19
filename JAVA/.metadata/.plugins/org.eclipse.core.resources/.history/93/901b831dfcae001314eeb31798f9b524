@@ -1,0 +1,43 @@
+package cs22510_2014;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		String file1 = "/home/evdjoint/gps_1.dat";
+		String file2 = "/home/evdjoint/gps_2.dat";
+
+		Controller controller = new Controller(file1, file2);
+
+		PrintWriter pw = null;
+		try {
+			controller.start();
+			pw = new PrintWriter("data.gpx");
+
+			pw.write("<?xml version=\"1.0\"?>\n" + 
+					"<gpx\n" + 
+					" version=\"1.0\"\n" + 
+					" creator=\"Evdzhan Mustafa\"\n" + 
+					" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n");
+			
+
+			for (Location l : controller.locs) {
+				pw.write("\n<wpt lat=\""+l.latitude+"\" lon=\"-"+l.longitude+"\">"
+						+ "<time>"+l.date.toString() +"</time>"
+						+ "</wpt>\n");
+			}
+
+			pw.write("</gpx>");
+
+		} catch (FileNotFoundException e) {
+
+			e.printStackTrace();
+		}
+		pw.close();
+
+	}
+
+}

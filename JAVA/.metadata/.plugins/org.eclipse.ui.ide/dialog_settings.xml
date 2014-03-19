@@ -16,5 +16,14 @@
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/evdjoint/Programming/JAVA/CS211"/>
+			<item value="/home/evdjoint/Programming/JAVA/CS225"/>
+			<item value="/home/evdjoint/Programming/JAVA/SudokuSolverJAVA"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
 	</section>
 </section>

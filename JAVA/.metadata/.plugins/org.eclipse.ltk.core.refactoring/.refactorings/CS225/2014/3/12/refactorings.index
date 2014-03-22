@@ -13,3 +13,5 @@
 1395187782622	Rename local variable 'satelitesNum'
 1395187839318	Rename local variable 'data'
 1395188075323	Rename method 'offset'
+1395252072136	Rename local variable 'degrees'
+1395252079154	Rename local variable 'minutes'

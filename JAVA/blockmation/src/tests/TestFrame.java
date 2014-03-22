@@ -1,9 +1,11 @@
-package uk.ac.aber.dcs.cs12420.blockmation.tests;
-import java.io.FileNotFoundException;
+package tests;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
-import uk.ac.aber.dcs.cs12420.blockmation.*;
-import static org.junit.Assert.*;
-import org.junit.*;
+import org.junit.Before;
+import org.junit.Test;
+
+import blockmation.FrameModel;
 public class TestFrame {
 	FrameModel asd= new FrameModel(20,20);
 	@Before

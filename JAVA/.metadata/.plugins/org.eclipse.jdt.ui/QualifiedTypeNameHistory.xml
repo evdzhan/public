@@ -37,4 +37,6 @@
 <fullyQualifiedTypeName name="cs22510_2014.Location"/>
 <fullyQualifiedTypeName name="java.math.RoundingMode"/>
 <fullyQualifiedTypeName name="blockmation.FrameModel"/>
+<fullyQualifiedTypeName name="abtract_data_types.LinkedList"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
 </qualifiedTypeNameHistroy>

@@ -1,9 +1,11 @@
-package uk.ac.aber.dcs.cs12420.blockmation.tests;
-import uk.ac.aber.dcs.cs12420.blockmation.*;
-import static org.junit.Assert.*;
+package tests;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import blockmation.FrameHolder;
 
 public class TestHolder {
 	FrameHolder fh=new FrameHolder();

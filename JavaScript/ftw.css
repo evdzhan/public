@@ -1,0 +1,33 @@
+
+ 
+body {
+color : #303030 ;
+background-color: black;
+
+width : 640px;
+position:relative;
+margin :0 auto 0;
+
+}
+#canvas {
+cursor:url(sword.png),crosshair;
+border-radius:5px; 
+}
+header {
+background-color: rgb(150,233,245);
+margin:10px 0px 10px 0px;
+border-radius:5px; 
+width:100%;
+height:100px ;
+float:left;
+}
+article {
+background-color: rgb(233,233,233);
+
+border-radius:5px; 
+width:100%;
+height:auto;
+
+
+}
+ 

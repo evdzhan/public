@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objects exercises</title>
+	</head>
+	<body onLoad="start_game()">
+ 
+<p id="lol"> </p>
+	<canvas id="canvas1" width="700" height="300" style="border:1px dotted" ></canvas>
+
+
+<script>
+
+// let's set up a canvas and a canvas context so we can draw stuff
+var mycanv=document.getElementById("canvas1");
+var ctx=mycanv.getContext("2d");
+
+var bullets=[]; 
+
+mycanv.addEventListener("click",seenaclick,false);
+
+function seenaclick(e) {
+
+	var bounding_box=mycanv.getBoundingClientRect();
+
+        newbulletx=(e.clientX-bounding_box.left) *
+                             (mycanv.width/bounding_box.width);	
+
+        newbullety=(e.clientY-bounding_box.top) *
+				(mycanv.height/bounding_box.height);	
+
+        add_bullet(newbulletx,newbullety);
+}
+ 
+function add_bullet(x,y) { 
+var bullet = {
+bullet_x : x ,
+bullet_y : y  
+};
+bullets.push(bullet);
+}
+
+       
+function start_game() { 
+        game_id=setInterval(game_loop, 50);
+}
+
+function game_loop() {
+	 
+         document.getElementById("lol").innerHTML=bullets.length;
+         
+         mycanv.width=mycanv.width; 
+
+         
+        for(var i = 0 ; i < bullets.length ; i++) { 
+          if(bullets[i].bullet_x < mycanv.width) {
+               draw_bullet(bullets[i].bullet_x,bullets[i].bullet_y);  
+         } else {
+              bullets.splice(i,1); 
+         }               
+         }
+
+         
+        for(var i = 0 ; i < bullets.length ; i++) {
+         bullets[i].bullet_x++;
+         }
+ 
+
+}
+
+function draw_bullet(x,y) {
+    ctx.fillRect(x,y,10,10);
+
+}
+
+
+
+</script>
+</body>
+</html>
+
+

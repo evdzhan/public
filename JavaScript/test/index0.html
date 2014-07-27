@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript for debugging</title>
+		<link rel="stylesheet" href ="../hannah.css">
+	</head>
+	<body>
+
+		<h2>This text box does something really basic </h2>
+		<input type="text" id="blahblah" onClick="do_counter();">
+		<script>
+			var num=0;
+			var running=false;
+			function do_counter() {
+				if (running==false) {
+					running=true;
+					countup;
+					x=setInterval(countup,1000);
+				} else {
+					running=false;
+					clearInterval(x);
+				}
+
+
+			}
+		function countup() {
+			box2=document.getElementById("blahblah");
+                        num3=num*3;
+			box2.value=num3;
+			num++;
+                        console.log(num);
+		}
+	
+	</script>
+ </body>
+</html>
+

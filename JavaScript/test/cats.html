@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SWAG MOJE BI</title>
+	</head>
+	<body onLoad="start_game()">
+
+	<h2 id="h2">KAKAV TI E STILA ?</h2>
+
+	<canvas id="canvas1" width="1280" height="560" style="border:1px solid" onClick="stop_game()"></canvas>
+
+<p id="p1">
+<!--This is an "empty" paragraph, which we can fill using JavaScript and a call to document.getElementById('p1') if we find we want to write anything on the page-->
+</p> 
+
+
+<script>
+// let's have a couple of global variables.
+ 
+var mycanv=document.getElementById("canvas1");
+var ctx=mycanv.getContext("2d");
+mycanv.addEventListener("click",hitpaint, false);
+var count = 0 ;
+// main game function, called on page load
+function start_game() {
+  
+draw_katy() ;
+ // var intervalID=setInterval( draw_katy,1055);      
+
+}
+ 
+
+// probably have something to do when we're finished
+function stop_game() {
+    
+}
+
+
+function draw_katy() {
+  mycanv.width=mycanv.width ;
+  var x=Math.round(Math.random() * 1000) ;
+  var y=Math.round(Math.random() * 280)  ;
+    var katy_img=new Image();
+    katy_img.src="katycat.png";
+    ctx.drawImage(katy_img,x,y);
+ 
+    
+
+}
+
+
+function hitpaint(mouse_event) {
+console.log("asd ");
+	 
+
+
+	// find the bounding rectangle of the canvas
+	var bounding_box=mycanv.getBoundingClientRect();
+
+	// get the mousex and mousey location on the canvas
+	// from the mouse_event 
+	// and the canvas bounding rectangle
+        var mousex=(mouse_event.clientX-bounding_box.left) *
+                             (mycanv.width/bounding_box.width);	
+        var mousey=(mouse_event.clientY-bounding_box.top) *
+				(mycanv.height/bounding_box.height);	
+        var pixels=ctx.getImageData(mousex,mousey,1,1);
+
+	// It's possible that there is more than one pixel at this
+	// location (if the monitor is high-res, one "canvas pixel" 
+	// might correspond to more than one "image pixel") so we need
+	// to use a loop to test whether any of the pixels has an
+	// alpha value greater than 0
+
+	// With pixel data...
+	// 0 is red, 1 is green, 2 is blue, 3 is alpha 
+	// So we need to check data[3] and every fourth element in 
+	// data after that.
+	
+
+	for (var i=3; i<pixels.data.length; i+=4) {
+		// If we find a non-zero alpha we can just stop and return
+		// "true" - the click was on a part of the canvas that's
+		// got colour on it.
+            if ( pixels.data[i]!==0 ) {
+count++;
+document.getElementById("h2").innerHTML=count;
+draw_katy();
+return true;
+}
+	}
+
+
+	// The function will only get here if none of the pixels matched in 
+	// the loop above, so we know that the mouse click wasn't on a painted
+	// part of the canvas
+        return false;
+
+}
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\title{ "Client Side Graphics Programming For the Web" Report   }
+
+\author{Evdzhan Mustafa}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This is my CS252 report on the game I have built using JavaScript, HTML5 and CSS3. The game can be found on the following website \url{http://users.aber.ac.uk/enm3/ftw/gamesite.html}
+
+\section{Executive summary}
+The game is played by controlling a hero unit (protagonist). The player can shape shift into three type of heroes instantaneously, by pressing a single key(SPACE).  The hero unit can shoot bullets at the enemy. The enemies in the current version of the game are only the orc chasers and the towers. There is only one enemy at any given time. The game initially starts with an orc chaser, which walks towards the hero unit. If he comes to contact with the hero unit, it takes away a life from the player. When the first orc dies, a randomly chosen unit is spawned. In this version of the game it is either another orc chaser or a tower. A tower is immobile unit, which shoots bullets. If a tower bullet hits the hero unit, a life is lost. When a tower is killed, it drops a treasure containing gold. It must be collected by the player in order to score points.\\ \\
+When the user shape shifts to a different hero, his icon changes. Along with the visual change, different stats are also changed namely movement speed, bullet range and bullets per second. The three heroes have different variations of those three stats. Some heroes are more useful when fighting towers, since they have huge range. Others are much faster, and collecting the treasure takes much less time.
+
+\section{Technical overview}
+The game was built using HTML5, JavaScript and CSS3. The animation effect was achieved through a JavaScript loop, that paints on a HTML5 canvas element. What has to be painted on the canvas is held in various variables. Those variables are dynamically changed when the player presses the required buttons and uses the mouse. When a change in a variable occurs, the next repaint reflects that change, updating the canvas. \\\\
+Along with the canvas I used various other HTML5 features such as the audio tag and the local storage. I chose to use only HTML5 technologies as I had no other knowledge in Silverlight/JavaFX/Flash. Nevertheless, I think I achieved the functionally I wanted, using only HTML5 features. For a local storage I could have used server site scripting, but less load on the server the better.
+\section{Software testing}
+The game was tested on Firefox Mozilla and Google Chrome browsers, on a Windows 7 64 bit OS. There weren't any issues with both browsers. However, when I switched to a Linux Mint 16 64 bit OS, the performance under Mozilla dropped. Furthermore, when the user attempts to move the mouse over the canvas rather quickly, the game can freeze. I did some testing to determine why this happens. I tried to lighten up my repaint loop, but even when only the movement functionality was left, the game was still freezing. This meant that the freezing had nothing to do with my code. So I gave up on trying to fix that. Searching the web, I found that the reason for that is that in its Linux version, Firefox uses quite old graphics engine.  Apart from this issue everything was running well as on Windows 7 OS. \\ \\
+Unfortunately, the game cannot be played on a mobile browsers, since the controls highly rely on the mouse and the keyboard. The user must shape shift frequently, in order to stay alive or defeat the towers. It is not practical to play the game in phone browsers.
+
+\section{Reflections and future work }
+There are many ideas I had, but failed to implement, either because I had no time, or the technologies needed were unfamiliar to me. \\ 
+As mentioned earlier, current enemies are only the orc chasers and the towers. The set of enemies can be expanded which must be defeated using different hero type. Furthermore more heroes could be added. Currently, as the amount of gold collected increases, the number of hits it takes to kill a enemy unit increases too. The game could be easily made to boost the enemies even more. For example increase the range of the tower, or make the orc chaser run faster. There are various options on what can be boosted. As additional content, more maps could be added, that have obstacles. This of course will require additional functions to handle the pathfinding of the orcs. \\ 
+A really cool hero I wanted to implement was the invisible one. He wouldn't be seen by towers. So they'd stop shooting. And orc chasers would just run in random directions. However the invisibility would have a timer and is not forever. As the game progresses the timer would increase, so that the hero becomes stronger. \\
+Another cool idea I had was about adding runes. A rune would spawn randomly on the map, and give the player some kind of bonuses, like double gold gain, faster move speed and others.
+\end{document}

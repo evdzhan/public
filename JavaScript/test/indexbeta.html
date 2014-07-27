@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript clicky game</title>
+	</head>
+	<body>
+
+	<h2>When the button appears, click on it!</h2>
+
+<!--This is an "empty" paragraph, which we can fill using JavaScript and a call to document.getElementById('p1') -->
+<p id="p2">
+<button onClick="start_game()" type="button">Start the game</button> </p> 
+<p id="p1">
+
+
+</p>
+<p id="p3">
+</p>
+
+<script>
+var best_reaction_time = 100000;
+var time_now;
+var tempdate;
+var time_then;
+var reaction_time;
+var x;
+var delay;
+
+function start_game() {
+delay=Math.round(Math.random() * 1000);
+console.log(delay);
+
+	// get the date and time now 
+	tempdate=new Date();
+
+              
+
+	// store the time the button will show 
+	time_then=tempdate.getTime() + delay;
+
+	// set our button to show "delay" ms in the future
+	x=setTimeout("show_button()",delay);
+
+}
+function stop_game() {
+	// Fill in some blanks here
+	// You should find out what time the button was clicked
+          
+         time_now = new Date().getTime();
+         reaction_time = time_now - time_then; 
+         
+	// And you should work out what reaction_time 
+	// should be
+	 
+	document.getElementById('p1').innerHTML='You took '+reaction_time+' milliseconds';
+        if(best_reaction_time > reaction_time ) {
+             best_reaction_time = reaction_time;
+           document.getElementById('p3').innerHTML='Best reaction time is '+best_reaction_time+' milliseconds';
+           }
+     
+}
+
+
+function show_button() {
+	document.getElementById('p1').innerHTML='<input type="button" value="Stop!" id="blahblah" onClick="stop_game();">';
+}
+
+</script>
+</body>
+</html>
+

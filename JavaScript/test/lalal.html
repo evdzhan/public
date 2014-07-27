@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My first canvas</title>
+	</head>
+	<body  >
+
+	<h2>Rearrange the code in this page so it draws something that looks like a house</h2>
+<button type="button" onclick="draw_house()" > Click me muthafuka </button>
+<button type="button" onclick="asd()" > Click me muthafuka </button>
+	<canvas width="400" height="400" id = "house" style="border:1px dotted"></canvas>
+	<script>
+		canv=document.getElementById("house");
+		ctx=canv.getContext("2d");
+		function draw_house() {
+                        var roofbasex=210;
+                        var roofbasey=200;
+			// A nice shiny red roof
+			ctx.fillStyle="#f00";
+			ctx.beginPath();
+			ctx.moveTo(roofbasex,roofbasey);
+			ctx.lineTo(roofbasex+85,roofbasey);
+			ctx.lineTo(roofbasex ,roofbasey-85);
+			 
+			ctx.closePath();
+			ctx.fill();
+			ctx.beginPath();
+			ctx.moveTo(roofbasex,roofbasey);
+			ctx.lineTo(roofbasex  ,roofbasey-85 );
+			ctx.lineTo(roofbasex -85 ,roofbasey);
+			 
+			ctx.closePath();
+			ctx.fill();
+			
+			
+
+			// a window 
+                    
+
+			// a pale stone front
+		        var housebasex=160;	
+		        var housebasey=200;	
+			ctx.fillStyle="#cc9";
+			ctx.fillRect(housebasex,housebasey,90,90);
+                        var windowsbasex=220;
+                        var windowsbasey=210;
+			ctx.fillStyle="#044";
+			ctx.fillRect(windowsbasex,windowsbasey,15,20);
+			
+			// another few windows 
+			ctx.fillRect(windowsbasex,windowsbasey+50,15,20);
+			ctx.fillRect(windowsbasex-50,windowsbasey,15,20);
+			ctx.fillRect(windowsbasex-50,windowsbasey+50,15,20);
+			// a bright blue door
+			var doorbasex=200;
+			var doorbasey=260;
+			ctx.fillStyle="#04f";
+			ctx.fillRect(doorbasex,doorbasey,10,30);
+}
+			function draw_sun() { 
+			var sun_centrex=170;
+			var sun_centrey=50;
+			var sun_radius=40;
+			ctx.fillStyle="#ff0";
+			ctx.beginPath();
+			ctx.arc(sun_centrex, sun_centrey, sun_radius, 0, 2*Math.PI, false);
+			ctx.fill();
+			ctx.closePath();
+
+			}
+
+		
+ function asd() {
+ 
+  ctx.translate(Math.PI/2,1,Math.PI/2,1,0,0);
+  draw_house();
+ }
+</script>
+</body>
+</html>

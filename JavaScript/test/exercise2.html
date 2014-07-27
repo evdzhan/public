@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <script type='text/javascript'>
+  var canvas = null;
+var img = null;
+var ctx = null;
+var imageReady = false;
+function onload() {
+  canvas = document.getElementById('gameCanvas');
+  ctx = canvas.getContext("2d");
+  img = new Image();
+  img.src = 'simba.png';
+  img.onload = loaded();
+  resize();
+}
+
+function loaded() {
+    imageReady = true;
+    setTimeout( update, 1000 / 60 );
+}
+var frame = 0;
+
+function update() {
+    redraw();
+    frame++;
+    if (frame >= 6) frame = 0;
+    setTimeout( update, 1000 / 120 );
+}
+function resize() {
+  canvas.width = canvas.parentNode.clientWidth;
+  canvas.height = canvas.parentNode.clientHeight;
+  redraw();
+}
+function redraw() {
+    ctx.fillStyle = '#000000';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    if (imageReady)
+        ctx.drawImage(img, frame*96, 0, 96, 54,
+                      canvas.width/2 - 48, canvas.height/2 - 48, 96, 54);
+}
+  </script>
+</head>
+<body onresize='resize()' onload='onload()' style='position: absolute; padding:0; margin:0; height: 100%; width:100%'>
+
+<canvas id="gameCanvas"></canvas>
+
+</body>
+</html>

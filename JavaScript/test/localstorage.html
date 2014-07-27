@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body onLoad="get_contents_of_localstorage()">
+<h1>LocalStorage</h1>
+<p>This page is to help you get to grips with localstorage. </p>
+<ol>
+<li>First up, read the source. There are just two missing lines - one in the add something function, and one in the delete something function. </li>
+<li>Next, try this with scores. Put in numbers, and see what comes out.</li>
+<li>Can you fix it? Basically, what comes out of localstorage is a string. To do a high score table, you're going to have to<ol>
+<li>Get the numbers out of localstorage as strings</li>
+<li>Store them (in an array or in an object) as numbers</li>
+<li>Then sort them</li>
+</ol></li>
+</ol>
+<p id="ls"></p>
+<form name="form1" onSubmit="add_to_localstorage()">
+<p>A form to put stuff in the localstore:<br />
+key: <input type="text" name="key_"><br />
+value: <input type="text" name="value_"><br />
+submit: <input type="submit" value="put it in the localStorage">
+</p>
+</form>
+<form name="form2" onSubmit="delete_something_from_localstorage()">
+<p>And now a form to take stuff out again:<br />
+key: <input type="text" name="del_key"><br />
+submit: <input type="submit" value="delete this thing from the localStorage">
+</p>
+</form>
+<script>
+//This function tests whether localstorage works. You can just treat this as
+// a black box.
+function supports_html5_storage() {
+  try {
+    return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+    return false;
+  }
+}
+//This function gets the contents of localstorage.
+function get_contents_of_localstorage() {
+  if (supports_html5_storage()) {
+          var contents=" ";
+	  for (i=0; i<=localStorage.length-1; i++)  
+	  {  
+		  key = localStorage.key(i);  
+                  contents=contents+"key="+key+":";
+		  val = localStorage.getItem(key);  
+                  contents=contents+"value="+val+"<br /> ";
+	  }  
+    
+
+	  document.getElementById("ls").innerHTML="localstorage contents: <br /> "+contents;
+  } else {
+     document.getElementById("ls").innerHTML="your browser doesn't support localStorage I'm afraid, sorry!";
+  }
+}
+
+function add_to_localstorage() {
+	if (supports_html5_storage()){
+		var k=document.forms["form1"]["key_"].value;
+		var v=document.forms["form1"]["value_"].value;
+
+localStorage[k] = v;
+// to set the contents of localstorage, you need a key and a value. that comes from the 
+// form values that we've just collected. 
+// now you need to set that in localstorage
+
+
+	} 
+}
+
+function delete_something_from_localstorage() {
+     	if (supports_html5_storage()){
+		var k=document.forms["form2"]["del_key"].value;
+// to delete something from localstorage you need to use the removeItem method
+// add a line below to do that. 
+localStorage.removeItem(k);
+
+
+	}
+}
+</script>
+
+
+<script type="text/javascript">var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9924177-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My first canvas</title>
+	</head>
+	<body onLoad="draw()">
+
+	<h2>Rearrange the code in this page so it draws something that looks like a house</h2>
+<h2>
+lol
+</h2>
+
+	<canvas width="1280" height="400" id = "house" style="border:1px dotted"></canvas>
+	<script>
+function draw() {
+ctx.save();
+ctx.scale(0.7,0.7);
+draw_house(0,0);
+draw_house(130,20);
+ctx.restore();
+draw_sun();
+
+ctx.translate(Math.PI/2,1,Math.PI,1,1,0.5);
+draw_house(50,50);
+
+}
+		canv=document.getElementById("house");
+		ctx=canv.getContext("2d");
+		function draw_sun() {
+                        
+
+         			// a radiant yellow sun
+			var sun_centrex=70;
+			var sun_centrey=70;
+			var sun_radius=40;
+			ctx.fillStyle="#ff0";
+			ctx.beginPath();
+			ctx.arc(sun_centrex, sun_centrey, sun_radius, 0, 2*Math.PI, false);
+			ctx.fill();
+			ctx.closePath();
+
+			
+
+		 }
+function draw_house(basex,basey) {
+
+
+
+                        var roofbasex= basex + 140;
+                        var roofbasey= basey + 200;
+			// A nice shiny red roof
+			ctx.fillStyle="#f00";
+			ctx.beginPath();
+                        
+			ctx.moveTo(roofbasex,roofbasey);
+			ctx.lineTo(roofbasex+20,roofbasey-20);
+			ctx.lineTo(roofbasex+110,roofbasey-20);
+			ctx.lineTo(roofbasex+130,roofbasey);
+			ctx.closePath();
+			ctx.fill();
+
+		 
+                      			
+		        var housebasex =basex +  160;	
+		        var housebasey =basey +  200;	
+			ctx.fillStyle="#cc9";
+			ctx.fillRect(housebasex,housebasey,90,90);
+
+			// a bright blue door
+			var doorbasex=basex + 200;
+			var doorbasey=basey + 260;
+			ctx.fillStyle="#04f";
+			ctx.fillRect(doorbasex,doorbasey,10,30);
+                        var windowsbasex=basex +  220;
+                        var windowsbasey=basey +  210;
+                        ctx.fillStyle="#044";
+			ctx.fillRect(windowsbasex,windowsbasey,15,20);
+			
+			// another few windows 
+			ctx.fillRect(windowsbasex,windowsbasey+50,15,20);
+			ctx.fillRect(windowsbasex-50,windowsbasey,15,20);
+			ctx.fillRect(windowsbasex-50,windowsbasey+50,15,20);
+
+
+
+}
+
+</script>
+</body>
+</html>
+

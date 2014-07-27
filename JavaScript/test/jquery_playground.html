@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery playgroun</title>
+	</head>
+	<body onload=buttonpressed()>
+
+	<h1>Heading 1!</h1>
+	<h2>Heading 2!</h2>
+	<h3>Heading 3!</h3>
+
+<p id="p1">Here's a paragraph with an ID so you can do stuff by ID - the ID is p1 just in case you can't be bothered to look at the source.</p> 
+
+<p>Here's another paragraph, this time without an ID</p>
+<p>Here's yet another paragraph, this time without an ID</p>
+
+<h2>And another heading</h2>
+<ul>
+<li>A list item</li>
+<li>Another list item</li>
+<li>Another list item</li>
+<li>Another list item</li>
+<li>Another list item</li>
+</ul>
+
+<p>There's a button below which runs some simple jQuery. Have a play with the code, and see if you can get it to do something else. For example, why not try adding some CSS to the page?</p>
+<input type="button" value="Click on this button to run some jquery" onClick="buttonpressed()">
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+function buttonpressed() {
+ $("h1").text("JQuery Playground?").css("background-color","red");
+ $("body").css("background-color","green");
+}
+</script>
+</body>
+</html>

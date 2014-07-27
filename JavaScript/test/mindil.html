@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cat fight</title>
+	</head>
+	<body onLoad="start_game()">
+
+	<center><h2 id="heading">0</h2>
+
+	 <canvas id="canvas1" width="860" height="500" style="border:1px dotted" ></canvas></center>
+
+<p id="p1">
+<!--This is an "empty" paragraph, which we can fill using JavaScript and a call to document.getElementById('p1') if we find we want to write anything on the page-->
+</p> 
+
+
+<script>
+// let's have a couple of global variables.
+var move_distance=2.5;
+var evil_cat_x=100;
+var evil_cat_y=0;
+var cat_x=100;
+var cat_y=100;
+var points=0;
+var chris_img=new Image();
+var katy_img=new Image();
+var up=false;
+var left=false;
+// let's set up a canvas and a canvas context so we can draw stuff
+var mycanv=document.getElementById("canvas1");
+var ctx=mycanv.getContext("2d");
+
+// let's add an event listener to the canvas - this will call the function
+// seenmotion whenever the mouse moves. we're going to use this to move
+// katycat about
+mycanv.addEventListener("mousemove",seenmotion,false);
+
+function seenmotion(e) {
+        // if the mouse moves over the canvas
+        // this function will be called - we can then 
+        // update katycat's location on the canvas
+	// from the mouse_event 
+	// and the canvas bounding rectangle
+ 
+        // cat_x and cat_y variables are globals, defined above.
+
+	var bounding_box=mycanv.getBoundingClientRect();
+        cat_x=(e.clientX-bounding_box.left) *
+                             (mycanv.width/bounding_box.width);	
+        cat_y=(e.clientY-bounding_box.top) *
+				(mycanv.height/bounding_box.height);	
+}
+        
+function start_game() {
+// start_game() is called when the page loads (check the body tag above)
+// all it does is set up an interval timer which calls the function game_loop
+// every 50 ms
+        game_id=setInterval(game_loop,50);
+}
+
+function game_loop() {	
+        mycanv.width=mycanv.width;         	
+        draw_katy(cat_x,cat_y); 
+        draw_chris(evil_cat_x,evil_cat_y); 
+ 
+left ? evil_cat_x -=move_distance : evil_cat_x+=move_distance;
+       
+up ? evil_cat_y -=move_distance : evil_cat_y+=move_distance;
+        
+if (evil_cat_x>mycanv.width - 100) {
+            left=true;
+	} else if(evil_cat_x < 0 ) {
+            left=false;
+}
+ 
+if(evil_cat_y > mycanv.height- 100) {
+           up=true;
+        } else if(evil_cat_y < 0){
+           up=false;        
+}
+if (cat_x < evil_cat_x + chris_img.width  && cat_x + katy_img.width  > evil_cat_x &&
+		cat_y < evil_cat_y + chris_img.height && cat_y + katy_img.height > evil_cat_y)
+{
+document.getElementById("heading").innerHTML=(points-=5); 
+}
+else {
+document.getElementById("heading").innerHTML=++points ;
+}
+}
+
+function draw_chris(x,y) {  
+    chris_img.src="chriscat.png";
+    ctx.drawImage(chris_img,x,y);
+}
+
+
+function draw_katy(x,y) {  
+    katy_img.src="katycat.png";
+    ctx.drawImage(katy_img,x,y);
+}
+</script>
+</body>
+</html>
+

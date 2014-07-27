@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objects exercises</title>
+	</head>
+	<body onLoad="start_game()">
+
+	<h2>Practice with objects and arrays 3</h2>
+<p>This exercise is to yet more with the array of bullet objects. We've got objects going into and out of an array, the aim here is to re-write some code so that the notation is more "object-like", in particular, we're going to add methods to the object (draw_bullet will become a method of the bullet object, rather than a separate function). The functionality will end up the same, but the code will be easier to manage (I hope!). </p>
+
+<p>At the moment, there are <span id="bulletcount"></span> bullets in memory.</p>
+<p>There are comments in the javascript - follow the instructions to get the example working.</p>
+
+	<canvas id="canvas1" width="700" height="300" style="border:1px dotted" ></canvas>
+
+
+<script>
+
+// let's set up a canvas and a canvas context so we can draw stuff
+var mycanv=document.getElementById("canvas1");
+var ctx=mycanv.getContext("2d");
+ ctx.fillStyle="rgb(255,20,20)";
+
+
+// this version is similar. but we're going to use more object-y notation.
+// to define a constructor in javascript you just have a function.
+// there's a convention (worth following) that object names have 
+// an uppercase first letter.
+
+// Here's a constructor for a bullet class.
+
+function Bullet(x,y) {
+   this.bullet_x=x;
+   this.bullet_y=y;
+   this.draw_bullet=draw_bullet;
+}
+
+
+// To have a method as part of the class, you just need to declare
+// them as a function (as normal). Any variables that are internal
+// to the class, you can refer to using this.variablename notation.
+// So here is our draw_bullet function from before... alter it so it
+// will work as part of the class. 
+function draw_bullet() {
+
+   ctx.fillRect(this.bullet_x,this.bullet_y,10,10);
+}
+
+
+
+var bullets=[]; //an empty array to store bullet objects
+
+// let's add an event listener to the canvas - this will call the function
+// seenaclick when it's clicked
+
+mycanv.addEventListener("click",seenaclick,false);
+
+function seenaclick(e) {
+
+	var bounding_box=mycanv.getBoundingClientRect();
+        newbulletx=(e.clientX-bounding_box.left) *
+                             (mycanv.width/bounding_box.width);	
+        newbullety=(e.clientY-bounding_box.top) *
+				(mycanv.height/bounding_box.height);	
+
+        add_bullet(newbulletx,newbullety);
+}
+        
+function start_game() {
+// start_game() is called when the page loads (check the body tag above)
+// all it does is set up an interval timer which calls the function game_loop
+// every 50 ms
+        game_id=setInterval(game_loop, 50);
+}
+
+function game_loop() {
+	// this is called every 50ms and is basically a 
+        // frame-redraw-game-animation loop
+
+        //first thing to do each frame is clear the canvas
+        // you'll want to uncomment this line once you have multiple bullets
+        // working
+        mycanv.width=mycanv.width; 
+
+        document.getElementById("bulletcount").innerHTML=bullets.length;
+
+        for (i=0;i<bullets.length;i++) {
+            // Is the bullet on the canvas?
+           if (bullets[i].bullet_x>canvas1.width) {
+		    bullets.splice(i,1);
+
+                    i=i-1; 
+           } else {
+
+	// We now need to update the way we draw the bullet
+         // Change this function so that it uses the new draw_bullet
+         // method of the bullet object
+		   bullets[i].draw_bullet();
+		   bullets[i].bullet_x++;
+	   }
+	} 
+
+}
+// finally, let's change the add bullet function so that it usese our
+// constructor  
+function add_bullet(x,y) {
+// change this line so it creates a bullet using the constructor
+   var bullet=new Bullet(x,y);
+
+// 
+   bullets.push(bullet);
+}
+
+// probably have something to do when we're finished
+function stop_game() {
+    
+}
+
+
+</script>
+</body>
+</html>
+

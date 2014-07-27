@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SWAG MOJE BI</title>
+	</head>
+	<body onLoad="start_game()">
+
+	<center><h2>KAKAV TI E STILA ?</h2> </center>
+
+	<center><canvas id="canvas1" width="1280" height="560" style="border:1px dotted" onClick="stop_game()"></canvas></center>
+
+ <p id="p1">
+<!--This is an "empty" paragraph, which we can fill using JavaScript and a call to document.getElementById('p1') if we find we want to write anything on the page-->
+</p> 
+
+
+<script>
+// let's have a couple of global variables.
+ 
+var mycanv=document.getElementById("canvas1");
+var ctx=mycanv.getContext("2d");
+var i = 0 ;
+// main game function, called on page load
+function start_game() {
+  
+
+  var intervalID=setInterval( draw_katy,155);      
+
+}
+
+// probably have something to do when we're finished
+function stop_game() {
+    
+}
+
+
+function draw_katy() {
+if( i == 0 ) {
+ canvas1.width=canvas1.width ;
+ctx.restore(); 
+}
+
+
+if(i < 50 ) {  var x=Math.round(Math.random() * 1100);
+     var y=Math.round(Math.random() * 470);
+    var katy_img=new Image();
+    katy_img.src="swag.jpg";
+    ctx.drawImage(katy_img,x,y);
+
+i++;
+            } else {
+ 
+canvas1.width= canvas1.width ;
+var x= 55;
+var y= 40 ;
+i=0;
+ctx.save();
+var katy_img=new Image();
+katy_img.src="vlak.jpg";
+
+ctx.scale(2,2);
+ctx.drawImage(katy_img,x,y);
+ctx.restore(); 
+
+ 
+    
+} 
+    
+
+}
+
+
+
+
+</script>
+</body>
+</html>
+

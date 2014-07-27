@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 
+		<title>Collision detection</title>
+	</head>
+	<body onLoad="start_game()">
+
+	<h2>Collision detection exercise</h2>
+
+
+</ol>
+	<canvas id="canvas1" width="700" height="300" style="border:1px dotted" ></canvas>
+
+<h2>Total collisions so far:</h2>
+<p id="p1">
+<!--This is an "empty" paragraph, which we can fill using JavaScript and a call to document.getElementById('p1') if we find we want to write anything on the page-->
+</p> 
+
+
+<script>
+document.getElementById('canvas1').style.cursor = "none";
+// let's have a couple of global variables.
+var collisions=0;
+var boxes = []; //array to hold the things we might collide with
+
+// a constructor for a box class 
+function Box(x_loc,y_loc,wid,hig) {
+   this.x=x_loc;
+   this.y=y_loc;
+   this.w=wid;
+   this.h=hig;
+   this.colour="#000";  // default is a black box
+   this.draw_box=draw_box;
+}
+
+
+// let's set up a canvas and a canvas context so we can draw stuff
+var mycanv=document.getElementById("canvas1");
+var ctx=mycanv.getContext("2d");
+
+// let's have a red box to represent the player
+var playerbox=new Box(100,100,20,20);
+playerbox.colour="#f00";
+
+// let's add an event listener to the canvas - this will call the function
+// seenmotion whenever the mouse moves. we're going to use this to move
+// katycat about
+mycanv.addEventListener("mousemove",seenmotion,false);
+
+function seenmotion(e) {
+        // if the mouse moves over the canvas
+        // this function will be called - we can then 
+        // update the red box's location on the canvas
+	// from the mouse_event 
+	// and the canvas bounding rectangle
+ 
+        // cat_x and cat_y variables are globals, defined above.
+
+	var bounding_box=mycanv.getBoundingClientRect();
+        playerbox.x=(e.clientX-bounding_box.left) *
+                             (mycanv.width/bounding_box.width);	
+        playerbox.y=(e.clientY-bounding_box.top) *
+				(mycanv.height/bounding_box.height);	
+}
+        
+function start_game() {
+// start_game() is called when the page loads (check the body tag above)
+// all it does is set up an interval timer which calls the function game_loop
+// every 50 ms
+
+        // add some boxes to the boxes array;
+
+        var b=new Box(100,100,30,20);
+        boxes.push(b);
+        var c=new Box(200,200,40,40);
+        boxes.push(c);
+        var d=new Box(100,200,10,10);
+        boxes.push(d);
+        var e=new Box(300,100,50,50);
+        boxes.push(e);
+        game_id=setInterval(game_loop, 50);
+}
+
+function game_loop() {
+	// this is called every 50ms and is basically a 
+        // frame-redraw-game-animation loop
+
+        //first thing to do each frame is clear the canvas
+        mycanv.width=mycanv.width; 
+
+        for (i=0;i<boxes.length;i++) {
+             boxes[i].draw_box(ctx);
+	     if (collides(boxes[i],playerbox)) {
+                  collisions++;
+                  // maybe do some other stuff here
+	     }
+
+	}
+        playerbox.draw_box(ctx);
+
+        
+        document.getElementById("p1").innerHTML=collisions;
+
+}
+
+function collides(box1,box2) {
+// now this is the bit you have to write.
+
+// you need to know the top left, top right, bottom left, and bottom right of each box.
+// if you find it easier to think about it that way un-comment the next lines
+// and do the calculations there - basically you don't need these 8 variables to keep
+// track, but it can help to think that way so go ahead and use them if it helps.
+
+// var box1top=
+// var box2top=
+// var box1bottom=
+// var box2bottom=
+// var box1left=
+// var box2left=
+// var box1right=
+// var box2right=
+
+
+// once you have worked out the box details you need to work out whether
+// they can't overlap.  there are four things to test - is the bottom of one
+// above the top of the other (r1 vs r2, and r2 vs r1), and is the right of 
+// one to the left of the left of the other (and vice versa). 
+
+
+
+if(box1.x < box2.x + box2.w && box1.x + box1.w > box2.x &&
+box1.y < box2.y + box2.h && box1.y + box1.h > box2.y) {
+return true;
+} 
+else {
+return false;
+}
+}
+
+// probably have something to do when we're finished
+function stop_game() {
+    
+}
+
+function draw_box(ctx) {
+    ctx.fillStyle=this.colour;
+    ctx.fillRect(this.x, this.y, this.w, this.h);
+
+}
+
+
+
+</script>
+</body>
+</html>
+

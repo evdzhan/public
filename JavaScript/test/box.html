@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body> 
+<canvas width="300" height="300" style="border:1px dotted;float:right" onClick="draw_box()" id="movebox"></canvas>
+
+<p>This has simple (but wrong) keyboard interaction using the arrow keys - click on the canvas to start.</p>
+<script>
+	  var cx;
+	  var cy;
+	  var c_canvas = document.getElementById("movebox");
+	  var c_context = c_canvas.getContext("2d");
+	  c_context.fillStyle="rgb(255,20,20)";
+	  function draw_box() {
+		  cx=100;
+		  cy=100;
+		  draw_b_box();
+		  setInterval(draw_b_box,50);
+	  }
+	  function draw_b_box() {
+		  c_canvas.width=c_canvas.width;
+		  c_context.fillRect(cx, cy, 20, 20);
+	  }
+
+function move_left() {
+   cx++;
+}
+
+function move_up() {
+   cy--;
+}
+function move_right() {
+   cx--;
+}
+function move_down() {
+   cy++;
+}
+document.onkeydown= function(event) {
+  
+  var keyCode; 
+  
+  if(event == null)
+  {
+    keyCode = window.event.keyCode; 
+  }
+  else 
+  {
+    keyCode = event.keyCode; 
+  }
+  console.log(keyCode);
+  switch(keyCode)
+  {
+    // left 
+    case 37:
+  move_right();
+     
+      break; 
+
+    // up 
+    case 38:
+    // action when pressing up key
+      move_up();
+      break; 
+
+    // right 
+    case 39:
+    // action when pressing right key
+     move_left();
+      break; 
+
+    // down
+    case 40:
+    // action when pressing down key
+      move_down();
+      break; 
+
+    default: 
+draw_box();
+      break; 
+  } 
+}
+</script>
+</body>
+</html>
+

@@ -1,3 +1,2 @@
 Those are my academic works throughout my academic years [2012-2014].
-I've achieved mark of 80% or more on all of them.
-
+I do not consider the code, written by me back then, any good. It just reflects what I've been doing working on. 

@@ -1,3 +1,3 @@
-# To run open solarsystem.html
-# PDF documentation is REPORT.pdf
-# have a nice day :)
+This is a 3D Model showing the Sun Earth and Moon.
+Implemented using  WebGL (three.js)
+2015/10/19

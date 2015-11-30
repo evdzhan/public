@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sun-Earth-Moon System by Evdzhan Mustafa</title>
+    <link rel="stylesheet" type="text/css" href="css/maincss.css">
+    <script src="javascript/threejs/three.js"></script>
+    <script src="javascript/threejs/OrbitControls.js"></script>
+    <script src="javascript/values.js"></script>
+    <script src="javascript/util.js"></script>
+    <script src="javascript/matrices.js"></script>
+    <script src="javascript/earthMoonSun.js"></script>
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+</head>
+<body>
+<div id="controls">
+    <div class="controlGroup"><br><br>
+        <label for="earthSunDistance">Earth-Sun distance</label><br>
+        <input id="earthSunDistance" autocomplete="off" type="range" min="1.5" max="9" step="0.01" value="4"
+               onchange="updateMoonEarthSunDistance(this,earthMesh)"><br>
+
+        <label for="moonEarthDistance">Earth-Moon distance</label><br>
+        <input id="moonEarthDistance" autocomplete="off" type="range" min="0.5" max="2" step="0.01" value="1"
+               onchange="updateMoonEarthSunDistance(this,moonMesh)"><br></div>
+    <div class="controlGroup">
+        <label for="sunScale">Sun size</label><br>
+        <input id="sunScale" autocomplete="off" type="range" min="0.1" max="2" step="0.1" value="1"
+               onchange="updateScale(this,sunMesh)"><br>
+
+        <label for="earthScale">Earth size</label><br>
+        <input id="earthScale" autocomplete="off" type="range" min="0.1" max="2" step="0.1" value="1"
+               onchange="updateScale(this,earthMesh)"><br>
+
+        <label for="moonScale">Moon size</label><br>
+        <input id="moonScale" autocomplete="off" type="range" min="0.1" max="2" step="0.1" value="1"
+               onchange="updateScale(this,moonMesh)"><br>
+    </div>
+    <div class="controlGroup">
+        <label for="sunSpinSpeed">Sun self axis speed</label><br>
+        <input id="sunSpinSpeed" autocomplete="off" type="range" min="0" max="20" step="0.1" value="1"
+               onchange="updateSpinSpeed(this,sunMesh)"><br>
+
+        <label for="earthSpinSpeed">Earth self axis speed</label><br>
+        <input id="earthSpinSpeed" autocomplete="off" type="range" min="0" max="20" step="0.1" value="1"
+               onchange="updateSpinSpeed(this,earthMesh)"><br>
+
+        <label for="moonSpinSpeed">Moon self axis speed</label><br>
+        <input id="moonSpinSpeed" autocomplete="off" type="range" min="0" max="20" step="0.1" value="1"
+               onchange="updateSpinSpeed(this,moonMesh)"><br>
+
+    </div>
+    <div class="controlGroup"><br><br>
+        <label for="earthRotateSpeed">Earth rotate Sun speed</label><br>
+        <input id="earthRotateSpeed" autocomplete="off" type="range" min="0" max="2" step="0.1" value='0.1'
+               onchange="updateRotateSpeed(this,earthMesh)"><br>
+
+        <label for="moonRotateSpeed">Moon rotate Earth speed</label><br>
+        <input id="moonRotateSpeed" autocomplete="off" type="range" min="0" max="20" step="1" value="1"
+               onchange="updateRotateSpeed(this,moonMesh)"><br></div>
+    <div class="controlGroup">
+        <label for="sunAxialTilt">Sun axial tilt</label><br>
+        <input id="sunAxialTilt" autocomplete="off" type="number" min="0" max="180.0" step="1" value="7.5"
+               onchange="updateAxialTilt(this,sunMesh)"><br>
+
+        <label for="earthAxialTilt">Earth axial tilt</label><br>
+        <input id="earthAxialTilt" autocomplete="off" type="number" min="0" max="180.0" step="1" value="23.44"
+               onchange="updateAxialTilt(this,earthMesh)"><br>
+
+        <label for="moonAxialTilt">Moon axial tilt</label><br>
+        <input id="moonAxialTilt" autocomplete="off" type="number" min="0" max="180.0" step="1" value="1.543"
+               onchange="updateAxialTilt(this,moonMesh)"><br>
+
+
+    </div>
+    <div class="controlGroup">
+        <label for="XYZAxis">XYZ Axis</label>
+        <input id="XYZAxis" autocomplete="off" type="checkbox" checked="checked" onchange="coordinateLinesOnOff(this)"><br>
+
+        <label for="SpinAxis">Spin Axis</label>
+        <input id="SpinAxis" autocomplete="off" type="checkbox" checked="checked" onchange="axialLinesOnOff(this)"><br>
+        <br><br>
+        <label for="moonOrbitTilt">Moon orbit tilt</label><br>
+        <input id="moonOrbitTilt" autocomplete="off" type="number" min="0" max="180.0" step="1" value="5.145"
+               onchange="updateMoonOrbitTilt(this)"><br>
+
+    </div>
+</div>
+<div id="mainDivElement"></div>
+<script src="javascript/solarsystemsrc.js"></script>
+</body>
+</html>

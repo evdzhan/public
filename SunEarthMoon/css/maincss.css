@@ -1,0 +1,46 @@
+body {
+    /* black */
+    background-color: #000000;
+    /* prevent the scroll bars */
+    overflow: hidden;
+}
+
+#mainDivElement {
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 100px;
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#controls {
+    background-color: #000000;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: auto;
+    height: 15%;
+    color: #aaaaaa;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0.8;
+
+}
+
+.controlGroup {
+    margin:10px;
+    padding:5px;
+    position: relative;
+    float: left;
+}
+
+
+
+
+

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;CS21120&apos; to &apos;sudoku_solver&apos;&#x0A;- Original project: &apos;sudoku_solver&apos;&#x0A;- Original element: &apos;sudoku_solver/src/CS21120&apos;&#x0A;- Renamed element: &apos;sudoku_solver/src/sudoku_solver&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;CS21120&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;CS21120" name="sudoku_solver" qualified="false" references="true" stamp="1395448226147" textual="false" version="1.0"/>
-</session>

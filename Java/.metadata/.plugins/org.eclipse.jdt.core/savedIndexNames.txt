@@ -1,6 +1,0 @@
-INDEX VERSION 1.126+/home/evdjoint/Programming/JAVA/.metadata/.plugins/org.eclipse.jdt.core
-2098202361.index
-3485449355.index
-3603074698.index
-1065379131.index
-1347166937.index

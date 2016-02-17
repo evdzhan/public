@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename field &apos;u&apos; in &apos;CS21120.Algs&apos; to &apos;the_sudoku&apos;&#x0A;- Original project: &apos;SudokuSolverJAVA&apos;&#x0A;- Original element: &apos;CS21120.Algs.u&apos;&#x0A;- Renamed element: &apos;CS21120.Algs.the_sudoku&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;u&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;CS21120{Algs.java[Algs^u" name="the_sudoku" references="true" setter="false" stamp="1395100407844" textual="false" version="1.0"/>
-</session>

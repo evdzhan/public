@@ -21,7 +21,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> {
     tree.insert(6);
     tree.insert(8);
 
-    tree.traverseTree(data -> System.out.println(data));
+    tree.traverseTree(System.out::println);
 
 
   }

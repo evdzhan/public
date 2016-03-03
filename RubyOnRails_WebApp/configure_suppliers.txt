@@ -1,0 +1,14 @@
+
+#Each supplier is run with separate proccess, port and development db.
+#first supplier is run with 
+rails s -e development_supplier_1 -p 5888 -P 5888
+
+#second supplier is run with
+rails s -e development_supplier_2 -p 5999 -P 5999
+
+#to seed the data customized for each db
+#to seed the data for first supplier
+rake db:seed RAILS_ENV=development_supplier_1
+
+#to seed the data for second supplier
+rake db:seed RAILS_ENV=development_supplier_2

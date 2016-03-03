@@ -1,0 +1,18 @@
+<div id='content-header'>
+  <h2>Browse cheapest wines</h2>
+
+  <div id='search-field'>
+    <%= form_tag(search_path, method: 'get', class: 'navbar-form navbar-right', role: 'search') do %>
+        <%= text_field_tag(:query, nil, class: 'form-control', placeholder: 'Search wines...') %>
+
+        <%= button_tag(type: 'submit', class: 'btn btn-primary', name: '') do %>
+            <span class="glyphicon glyphicon-search"></span>
+        <% end %>
+
+
+    <% end %>
+  </div>
+</div>
+<div id='wines'>
+  <%= render('store/wines') %>
+</div>

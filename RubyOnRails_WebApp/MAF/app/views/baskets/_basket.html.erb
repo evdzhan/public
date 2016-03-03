@@ -1,0 +1,18 @@
+<h2>Wines in basket</h2>
+
+<% if basket.basket_items.length > 0 %>
+
+    <table>
+
+      <%= render :partial => '/basket_items/basket_item', :collection => basket.basket_items %>
+
+      <tr class="total_line">
+        <td colspan="2">Total</td>
+        <td class="total_cell"><%= number_to_currency(basket.total_price, unit: '£') %></td>
+      </tr>
+    </table>
+    <%= button_to 'Checkout', store_check_out_path, method: :get, class: 'btn btn-success' %>
+    <%= button_to 'Empty Basket', @basket, method: :delete, class: 'btn btn-danger', data: {confirm: 'Are you sure?'}, remote: true, :authenticity_token => true, id: :empty_basket %>
+<% else %>
+    <%= content_tag(:p, 'Basket empty') %>
+<% end %>

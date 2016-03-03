@@ -1,0 +1,12 @@
+$('#basket').html("<%= escape_javascript render(@basket) %>");
+
+if ($.trim($("#notice").html()) != '') {
+  $('#notice').hide('slow');
+}
+
+if ($('#basket tr').length == 2) {
+  $('#basket').show('blind', 1000);
+}
+
+$('#current_item').css({'background-color': 'yellow'}).
+animate({'background-color': '#252525'}, 1500);

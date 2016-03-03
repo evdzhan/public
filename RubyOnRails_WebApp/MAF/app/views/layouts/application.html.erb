@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Alcoholic Free Wines</title>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id='container'>
+
+  <div id='header'>
+    <%= link_to(image_tag('logo.png'), store_index_url) %>
+    <div id='user_login_status' title="<%= current_user ? current_user.email : 'Sign/Login' %> ">
+      <% if user_signed_in? %>
+          Welcome <i><%= truncate(current_user.email, length: 25) %></i> <br>
+          <%= button_to('Edit profile', edit_user_registration_path, method: :get, class: 'btn btn-primary btn-xs') %>
+
+          <%= button_to('Logout', destroy_user_session_path, method: :delete, class: 'btn btn-primary btn-xs') %>
+      <% else %>
+          Welcome Guest <br>
+          <%= button_to('Sign up', new_user_registration_path, method: :get, class: 'btn btn-primary btn-xs') %>
+          <%= button_to('Login', new_user_session_path, method: :get, class: 'btn btn-primary btn-xs') %>
+      <% end %>
+    </div>
+  </div>
+  <div id="notice">
+    <% if notice %>
+        <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+        <p class="notice"><%= alert %></p>
+    <% end %>
+  </div>
+
+
+  <div id='content'>
+    <div id="<%= controller.controller_name %>"><%= yield %></div>
+    <% if controller.controller_name == 'store' %>
+        <%= hidden_div_if(@basket.basket_items.empty?, id: 'basket') do %>
+            <%= render(:partial => 'baskets/basket', :object => @basket) %>
+        <% end %>
+    <% end %>
+  </div>
+
+</div>
+</body>
+</html>

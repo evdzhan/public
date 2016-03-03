@@ -1,0 +1,31 @@
+#passwords, #sessions, #registrations {
+  background-color: rgba(255, 255, 255, 0.61);
+  border-radius: 50px;
+  width: 350px;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+  h2, label {
+    color: black;
+  }
+
+  #error_explanation {
+    width: 250px;
+    h2 {
+      visibility: hidden;
+    }
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .field_with_errors {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+  }
+}
+
+#remember-me {
+
+}

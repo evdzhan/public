@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Wine Bottles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>supplier</th>
+      <th>Image url</th>
+      <th>Description</th>
+      <th>Country</th>
+      <th>Grape</th>
+      <th>Vegeterians suitable</th>
+      <th>Size</th>
+      <th>Price</th>
+      <th>AVIN</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wine_bottles.each do |wine_bottle| %>
+      <tr>
+        <td><%= wine_bottle.supplier %></td>
+        <td><%= wine_bottle.image_url %></td>
+        <td><%= wine_bottle.description %></td>
+        <td><%= wine_bottle.country %></td>
+        <td><%= wine_bottle.grape %></td>
+        <td><%= wine_bottle.vegeterians_suitable %></td>
+        <td><%= wine_bottle.size %></td>
+        <td><%= wine_bottle.price %></td>
+        <td><%= wine_bottle.avin %></td>
+        <td><%= link_to 'Show', wine_bottle %></td>
+        <td><%= link_to 'Edit', edit_wine_bottle_path(wine_bottle) %></td>
+        <td><%= link_to 'Destroy', wine_bottle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wine bottle', new_wine_bottle_path %>

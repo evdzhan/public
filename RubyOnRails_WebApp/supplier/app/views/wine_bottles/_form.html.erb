@@ -1,0 +1,53 @@
+<%= form_for(@wine_bottle) do |f| %>
+  <% if @wine_bottle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wine_bottle.errors.count, "error") %> prohibited this wine_bottle from being saved:</h2>
+
+      <ul>
+      <% @wine_bottle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :supplier %><br>
+    <%= f.text_field :supplier %>
+  </div>
+  <div class="field">
+    <%= f.label :image_url %><br>
+    <%= f.text_field :image_url %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :grape %><br>
+    <%= f.text_field :grape %>
+  </div>
+  <div class="field">
+    <%= f.label :vegeterians_suitable %><br>
+    <%= f.check_box :vegeterians_suitable %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br>
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+    <div class="field">
+    <%= f.label :avin %><br>
+    <%= f.text_field :avin %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

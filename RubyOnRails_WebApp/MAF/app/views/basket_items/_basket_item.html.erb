@@ -1,0 +1,10 @@
+<% if basket_item == @current_item %>
+    <tr id="current_item">
+<% else %>
+    <tr>
+<% end %>
+
+<td><%= basket_item.quantity %> &times;</td>
+<td><%= basket_item.avin %></td>
+<td class="item_price"><%= number_to_currency(basket_item.total_price, unit: "£") %></td>
+</tr>

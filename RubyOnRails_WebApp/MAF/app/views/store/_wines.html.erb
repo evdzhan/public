@@ -1,0 +1,39 @@
+<% if @wines.length > 0 %>
+
+    <% @wines.each do |wine| %>
+        <div class="entry">
+          <div class='wineimage'><%= link_to(image_tag(wine['image_url']), show_url(avin: wine['avin'])) %></div>
+          <div class='winedetails'>
+
+
+            <div class='winedesc'><h3> <%= sanitize(truncate(wine['description'], length: 50)) %></h3></div>
+            <div class='winesize'><p><b>Size: </b><%= wine['size'] %> Liters </p></div>
+            <div class='wineavin'><p><b>AVIN: </b><%= wine['avin'] %>  </p></div>
+            <div class='winesupplier'><p><b>Supplier: </b><%= wine['supplier'] %></p></div>
+
+            <div class="price_line">
+              <span class="price"><%= number_to_currency(wine['price'], unit: '£') %></span>
+              <%= form_tag('/basket_items', remote: true, :authenticity_token => true) do %>
+                  <%= label_tag(:quantity) %>
+                  <%= number_field_tag('quantity', '1', min: 1, step: 1) %>
+                  <%= hidden_field_tag('avin', wine['avin']) %>
+                  <%= hidden_field_tag('price', wine['price']) %>
+                  <%= hidden_field_tag('supplier', wine['supplier']) %>
+                  <%= submit_tag('Add to Basket', class: 'btn btn-info') %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+    <% end %>
+
+    <div class="digg_pagination">
+      <div id='paginate-info-total'>
+        <%= page_entries_info @wines, model: 'wines' %>
+      </div>
+      <div id='paginate-info-currentpage'>
+        <%= will_paginate @wines, container: false %>
+      </div>
+    </div>
+<% else %>
+    <h1>Now wines were found!</h1>
+<% end %>

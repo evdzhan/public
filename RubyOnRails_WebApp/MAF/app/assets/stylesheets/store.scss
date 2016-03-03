@@ -1,0 +1,149 @@
+// Place all the styles related to the store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#store {
+  overflow: auto;
+  z-index: 1;
+  position: relative;
+  width: 66%;
+  float: left;
+
+  min-width: 820px;
+  max-width: 1500px;
+
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18), 0px 2px 10px 0px rgba(0, 0, 0, 0.18);
+
+  #content-header {
+    position: relative;
+    width: 100%;
+    border-bottom: solid black;
+    overflow: hidden;
+    h2 {
+      position: relative;
+      float: left;
+      margin: 10px;
+    }
+    #search-field {
+      position: relative;
+      float: right;
+      margin: 5px;
+      overflow: hidden;
+
+    }
+  }
+  #wines {
+    width: 100%;
+    /* single wine in MAF */
+    .entry {
+      overflow: auto;
+      margin-top: 10px;
+      border-bottom: 1px solid black;
+      min-height: 100px;
+      width: 820px;
+
+      .wineimage {
+        a:link {
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: none;
+          background: transparent;
+        }
+        position: relative;
+        float: left;
+        padding: 3px;
+        min-height: 94px;
+        min-width: 94px;
+        img {
+          a:hover {
+            background-color: rgba(255, 255, 255, 0);
+
+          }
+          cursor: url(wine.gif), default;
+          padding: 5px;
+          height: 94px;
+          width: 94px;
+        }
+
+      }
+      .winedetails {
+        margin: auto;
+        position: relative;
+        float: right;
+        width: 680px;
+        //padding: 0 25px;
+        h3 {
+          font-family: sans-serif;
+          margin-top: 0;
+          margin-bottom: 5px;
+          color: #227;
+        }
+        form, div {
+          display: inline;
+
+        }
+        form {
+          float: right;
+        }
+
+        #quantity {
+          width: auto;
+          max-width: 45px;
+        }
+        .price {
+          color: #44a;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .digg_pagination {
+
+      #paginate-info-total {
+        position: relative;
+        float: left;
+        overflow: auto;
+        margin: 10px;
+      }
+      #paginate-info-currentpage {
+        position: relative;
+        float: left;
+        overflow: auto;
+        margin: 10px;
+      }
+
+    }
+
+  }
+  #single-wine {
+    position: relative;
+    #image {
+      width: 40%;
+      float: left;
+      a {
+        img {
+          width: 85%;
+          height: 85%;
+        }
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+        background: transparent;
+      }
+    }
+    #wine-details {
+      width: 59%;
+      float: left;
+      form {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+

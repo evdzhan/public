@@ -1,0 +1,1 @@
+﻿This is project done in my personal work to solve Sudoku Puzzles. I have written similar program before using Java, but decided to port my solution to C++. This solution is far more advanced, and contains code to be read by me only. No comments are present whatsoever. Read at your own risk !

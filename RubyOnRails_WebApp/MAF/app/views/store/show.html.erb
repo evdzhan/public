@@ -1,0 +1,39 @@
+<div id="single-wine">
+  <div id='image'>
+    <%= link_to(image_tag(@displayed_bottle['image_url'])) %>
+  </div>
+  <div id='wine-details'>
+    <h3><%= sanitize(@displayed_bottle['description']) %></h3>
+
+    <p><b>Country of origin: </b><%= @displayed_bottle['country'] %>   </p>
+
+    <p><b>Grape: </b><%= @displayed_bottle['grape'] %>   </p>
+
+    <p><b>Suitable for vegetarians: </b><%= @displayed_bottle['vegeterians_suitable'].to_s == 'true' ? 'Yes' : 'No' %>
+    </p>
+
+    <p><b>AVIN: </b><%= @displayed_bottle['avin'] %>  </p>
+
+    <p><b>Size: </b><%= @displayed_bottle['size'] %> Liters </p>
+
+    <p><b>Supplier: </b><%= @displayed_bottle['supplier'] %>   </p>
+
+    <div class="price_line">
+      <span class="price"><b>Price: </b><%= number_to_currency(@displayed_bottle['price'], unit: "£") %></span>
+
+
+      <%= form_tag('/basket_items', method: :post, remote: :true, :authenticity_token => true) do %>
+
+
+          <%= number_field_tag('quantity', '1', min: 1, step: 1) %>
+          <%= hidden_field_tag('avin', @displayed_bottle['avin']) %>
+          <%= hidden_field_tag('price', @displayed_bottle['price']) %>
+          <%= hidden_field_tag('supplier', @displayed_bottle['supplier']) %>
+          <%= submit_tag('Add to Basket', class: 'btn btn-info') %>
+      <% end %>
+      <%= button_to('Back', 'index', method: :get, class: 'btn btn-primary') %>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>

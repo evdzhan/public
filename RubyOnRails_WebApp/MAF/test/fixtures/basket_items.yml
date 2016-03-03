@@ -1,0 +1,36 @@
+one:
+  quantity: 1
+  avin: AVIN111111111111
+  price: 10
+  basket_id: 1
+  supplier: FOX WINES
+
+two:
+  quantity: 2
+  avin: AVIN222222222222
+  price: 10
+  basket_id: 2
+  supplier: BEAR WINES
+
+three:
+  quantity: 3
+  avin: AVIN333333333333
+  price: 10
+  basket_id: 2
+  supplier: LION WINES
+
+four:
+  quantity: 4
+  avin: AVIN444444444444
+  price: 10
+  basket_id: 3
+  supplier: MOUSE WINES
+
+five:
+  quantity: 4
+  avin: AVIN444444444444
+  price: 10
+  basket_id: 4
+  supplier: MOUSE WINES
+
+

@@ -1,0 +1,11 @@
+$('#basket').hide('slow');
+
+$('#notice')
+    .hide('slow')
+    .html("<%= escape_javascript(content_tag(:p, 'Basket emptied', class: :notice)) %>")
+    .show('blind', 1000)
+    .css({'display': 'default'});
+
+
+
+
